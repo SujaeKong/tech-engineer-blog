@@ -9,6 +9,9 @@ set -e
 BLOG_DIR="$HOME/tech-engineer-blog"
 LOG_FILE="$BLOG_DIR/scripts/auto-analyze.log"
 
+# crontab 환경에서 PATH 설정
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+
 echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 시작 =====" >> "$LOG_FILE"
 
 cd "$BLOG_DIR"
@@ -17,7 +20,10 @@ cd "$BLOG_DIR"
 git pull --rebase >> "$LOG_FILE" 2>&1
 
 # Claude Code로 분석 및 포스트 생성
-claude -p "
+# --allowedTools: 권한 프롬프트 없이 필요한 도구만 허용
+claude -p \
+  --allowedTools "Read Write Edit Glob Grep Bash(git:*) Bash(ls:*)" \
+  "
 ~/tech-engineer-blog/_data/news_raw.json 파일을 읽고,
 기술사 출제분야 8개 카테고리(소프트웨어공학/데이터베이스/네트워크/정보보안/IT경영/시스템구조/AI데이터분석/신기술융합) 관점에서
 의미있는 뉴스를 선별하여 토픽 분석 포스트를 작성해줘.
