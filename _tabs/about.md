@@ -8,6 +8,16 @@ order: 4
 
 Google News RSS에서 정보관리기술사 관련 뉴스를 수집하고, 기술사 출제분야 관점으로 토픽을 분석하는 블로그입니다.
 
+---
+
+### 정보관리기술사 스터디 카페
+
+> 기술사 시험 준비, 토픽 토론, 스터디 모집은 네이버 카페에서!
+>
+> **[KPC 정보관리기술사 카페 바로가기](https://cafe.naver.com/kpcitpe){:target="_blank"}**
+
+---
+
 ### 출제분야 카테고리
 
 | 분야 | 주요 토픽 |
@@ -23,6 +33,11 @@ Google News RSS에서 정보관리기술사 관련 뉴스를 수집하고, 기�
 
 ### 운영 방식
 
-1. **뉴스 수집**: Python 스크립트로 Google News RSS 자동 수집
-2. **토픽 분석**: Claude AI가 기술사 출제분야 관점으로 분석
+1. **뉴스 수집**: Python 스크립트로 Google News RSS 자동 수집 (매일 07:00)
+2. **토픽 분석**: Claude AI가 기술사 출제분야 관점으로 자동 분석 (매일 07:30)
 3. **포스트 구조**: 뉴스 요약 → 핵심 개념 → 기술사 출제 포인트 → 관련 토픽 연계
+
+### 함께 공부해요
+
+- [KPC 정보관리기술사 네이버 카페](https://cafe.naver.com/kpcitpe){:target="_blank"} — 스터디, 기출 분석, 합격 후기
+- [GitHub 저장소](https://github.com/SujaeKong/tech-engineer-blog){:target="_blank"} — 블로그 소스코드

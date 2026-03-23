@@ -1,0 +1,12 @@
+===== 2026-03-23 15:30:01 자동 분석 시작 =====
+이미 업데이트 상태입니다.
+/Users/sujaekong/tech-engineer-blog/scripts/auto-analyze.sh: line 24: claude: command not found
+===== 2026-03-23 15:50:25 자동 분석 시작 =====
+error: 리베이스로 풀하기 할 수 없습니다: 스테이징하지 않은 변경 사항이 있습니다.
+error: 커밋하거나 스태시에 넣으십시오.
+===== 2026-03-23 15:51:14 자동 분석 시작 =====
+이미 업데이트 상태입니다.
+Error: Input must be provided either through stdin or as a prompt argument when using --print
+===== 2026-03-23 15:56:10 자동 분석 시작 =====
+이미 업데이트 상태입니다.
+===== 2026-03-23 15:58:48 자동 분석 완료 =====
