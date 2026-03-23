@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">홈</a>
+        {% assign categories = "소프트웨어공학,데이터베이스,네트워크,정보보안,IT경영,시스템구조,AI데이터분석,신기술융합" | split: "," %}
+        {% for cat in categories %}
+        <a href="{{ '/categories/' | append: cat | append: '/' | relative_url }}">{{ cat }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. 정보관리기술사 출제분야 관점 뉴스 분석.</p>
+    </div>
+  </footer>
+</body>
+</html>

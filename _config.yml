@@ -1,0 +1,32 @@
+title: "기술사 뉴스 블로그"
+description: "정보관리기술사 출제분야 관점의 IT 뉴스 토픽 분석"
+url: ""
+baseurl: ""
+timezone: Asia/Seoul
+permalink: /:categories/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Categories (기술사 출제분야)
+collections_dir: ""
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "기술사 뉴스봇"
+
+# Exclude from build
+exclude:
+  - scripts/
+  - requirements.txt
+  - README.md
+  - Makefile
