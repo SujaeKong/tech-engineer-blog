@@ -10,7 +10,7 @@ BLOG_DIR="$HOME/tech-engineer-blog"
 LOG_FILE="$BLOG_DIR/scripts/auto-analyze.log"
 
 # crontab 환경에서 PATH 설정
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v22.17.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
 echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 시작 =====" >> "$LOG_FILE"
 
