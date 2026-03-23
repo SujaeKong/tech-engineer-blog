@@ -21,18 +21,12 @@ git pull --rebase >> "$LOG_FILE" 2>&1
 
 # Claude Code로 분석 및 포스트 생성
 # --allowedTools: 권한 프롬프트 없이 필요한 도구만 허용
-claude -p \
-  --allowedTools "Read Write Edit Glob Grep Bash(git:*) Bash(ls:*)" \
-  "
-~/tech-engineer-blog/_data/news_raw.json 파일을 읽고,
-기술사 출제분야 8개 카테고리(소프트웨어공학/데이터베이스/네트워크/정보보안/IT경영/시스템구조/AI데이터분석/신기술융합) 관점에서
-의미있는 뉴스를 선별하여 토픽 분석 포스트를 작성해줘.
+cat <<'PROMPT' | claude -p --allowedTools "Read Write Edit Glob Grep Bash(git:*) Bash(ls:*)"
+~/tech-engineer-blog/_data/news_raw.json 파일을 읽고, 기술사 출제분야 8개 카테고리(소프트웨어공학/데이터베이스/네트워크/정보보안/IT경영/시스템구조/AI데이터분석/신기술융합) 관점에서 의미있는 뉴스를 선별하여 토픽 분석 포스트를 작성해줘.
 
-각 포스트는 _posts/ 폴더에 YYYY-MM-DD-제목.md 형식으로 생성하고,
-구조는: 뉴스 요약 → 핵심 개념 → 기술사 출제 포인트 → 관련 토픽 연계.
-이미 _posts/에 있는 포스트와 중복되는 주제는 제외해줘.
+각 포스트는 _posts/ 폴더에 YYYY-MM-DD-제목.md 형식으로 생성하고, 구조는: 뉴스 요약 → 핵심 개념 → 기술사 출제 포인트 → 관련 토픽 연계. 이미 _posts/에 있는 포스트와 중복되는 주제는 제외해줘.
 
 완료 후 git add, commit, push까지 해줘.
-" >> "$LOG_FILE" 2>&1
+PROMPT
 
 echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 완료 =====" >> "$LOG_FILE"
