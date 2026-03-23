@@ -28,6 +28,10 @@ avatar: "https://github.com/SujaeKong.png"
 
 toc: true
 
+analytics:
+  google:
+    id: "G-3H4G5XXWQL"
+
 comments:
   provider: # [disqus | utterances | giscus]
 
