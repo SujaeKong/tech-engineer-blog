@@ -28,6 +28,8 @@ cat <<'PROMPT' | claude -p --allowedTools "Read Write Edit Glob Grep Bash(git:*)
 
 각 포스트는 _posts/ 폴더에 YYYY-MM-DD-제목.md 형식으로 생성하고, 구조는: 뉴스 요약 → 핵심 개념 → 기술사 출제 포인트 → 관련 토픽 연계. 이미 _posts/에 있는 포스트와 중복되는 주제는 제외해줘.
 
+중요: 마크다운 표 작성 시 반드시 표 위에 빈 줄을 넣고, 표 내부 행 사이에는 빈 줄을 넣지 마.
+
 완료 후 git add, commit, push까지 해줘.
 PROMPT
 
