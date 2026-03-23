@@ -33,4 +33,8 @@ cat <<'PROMPT' | claude -p --allowedTools "Read Write Edit Glob Grep Bash(git:*)
 완료 후 git add, commit, push까지 해줘.
 PROMPT
 
+# 오늘의 토픽을 네이버 카페에 자동 게시
+echo "$(date '+%Y-%m-%d %H:%M:%S') 카페 게시 시작..." >> "$LOG_FILE"
+python3 "$BLOG_DIR/scripts/post_to_cafe.py" >> "$LOG_FILE" 2>&1 || true
+
 echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 완료 =====" >> "$LOG_FILE"
