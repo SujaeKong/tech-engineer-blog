@@ -1,32 +1,108 @@
-title: "기술사 뉴스 블로그"
-description: "정보관리기술사 출제분야 관점의 IT 뉴스 토픽 분석"
-url: ""
-baseurl: ""
+# The Site Configuration
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
 timezone: Asia/Seoul
-permalink: /:categories/:year/:month/:day/:title/
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+title: "기술사 뉴스 블로그"
+tagline: "정보관리기술사 출제분야 관점의 IT 뉴스 토픽 분석"
 
-# Categories (기술사 출제분야)
-collections_dir: ""
+description: >-
+  Google News RSS에서 정보관리기술사 관련 뉴스를 수집하고,
+  기술사 출제분야 관점으로 토픽을 분석하는 기술 블로그입니다.
+
+url: "https://sujaekong.github.io"
+baseurl: "/tech-engineer-blog"
+
+github:
+  username: SujaeKong
+
+social:
+  name: SujaeKong
+  links:
+    - https://github.com/SujaeKong
+
+theme_mode: # light or dark, empty = system
+
+avatar: # optional
+
+toc: true
+
+comments:
+  provider: # [disqus | utterances | giscus]
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
       author: "기술사 뉴스봇"
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-# Exclude from build
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
 exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
   - scripts/
   - requirements.txt
-  - README.md
   - Makefile
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
