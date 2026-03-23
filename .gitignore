@@ -7,3 +7,5 @@ vendor/
 __pycache__/
 *.pyc
 .DS_Store
+scripts/*.log
+.claude/

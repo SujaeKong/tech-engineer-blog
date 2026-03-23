@@ -16,8 +16,10 @@ echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 시작 =====" >> "$LOG_FI
 
 cd "$BLOG_DIR"
 
-# 최신 데이터 pull (GitHub Actions가 커밋한 news_raw.json)
+# 로컬 변경사항 임시 저장 후 pull
+git stash --include-untracked >> "$LOG_FILE" 2>&1 || true
 git pull --rebase >> "$LOG_FILE" 2>&1
+git stash pop >> "$LOG_FILE" 2>&1 || true
 
 # Claude Code로 분석 및 포스트 생성
 # --allowedTools: 권한 프롬프트 없이 필요한 도구만 허용
