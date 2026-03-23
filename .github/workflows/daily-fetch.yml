@@ -1,0 +1,37 @@
+name: "Daily News Fetch"
+on:
+  schedule:
+    # 매일 한국시간 07:00 (UTC 22:00 전날)
+    - cron: "0 22 * * *"
+  workflow_dispatch: # 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch daily news
+        run: python3 scripts/fetch_news.py --days 1
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/news_raw.json
+          if git diff --cached --quiet; then
+            echo "No new data to commit"
+          else
+            git commit -m "chore: daily news fetch $(date +%Y-%m-%d)"
+            git push
+          fi

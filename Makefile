@@ -3,6 +3,9 @@
 fetch: ## Google News RSS에서 뉴스 수집
 	python3 scripts/fetch_news.py
 
+fetch-daily: ## 최근 1일 뉴스만 수집
+	python3 scripts/fetch_news.py --days 1
+
 fetch-3d: ## 최근 3일 뉴스만 수집
 	python3 scripts/fetch_news.py --days 3
 
