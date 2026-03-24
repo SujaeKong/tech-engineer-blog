@@ -4,10 +4,10 @@
 # 2) Claude Code로 분석 + 포스트 생성
 # 3) 커밋 + 푸시
 
-set -o pipefail
+# 개별 실패가 전체를 중단하지 않도록 set -e 사용 안 함
 
 BLOG_DIR="$HOME/tech-engineer-blog"
-LOG_FILE="$BLOG_DIR/scripts/auto-analyze.log"
+LOG_FILE="$HOME/.tech-engineer-blog-auto.log"
 
 # crontab 환경에서 PATH 설정
 export PATH="$HOME/.nvm/versions/node/v22.17.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -16,10 +16,10 @@ echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 시작 =====" >> "$LOG_FI
 
 cd "$BLOG_DIR"
 
-# 로컬 변경사항 임시 저장 후 pull
-git stash --include-untracked >> "$LOG_FILE" 2>&1 || true
-git pull --rebase >> "$LOG_FILE" 2>&1
-git stash pop >> "$LOG_FILE" 2>&1 || true
+# 로컬 변경사항 초기화 후 pull (로그파일은 리포 밖이므로 안전)
+git checkout -- . >> "$LOG_FILE" 2>&1 || true
+git clean -fd >> "$LOG_FILE" 2>&1 || true
+git pull >> "$LOG_FILE" 2>&1
 
 # Claude Code로 분석 및 포스트 생성
 # --allowedTools: 권한 프롬프트 없이 필요한 도구만 허용
