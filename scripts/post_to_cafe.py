@@ -135,7 +135,9 @@ def find_today_topic():
 
 
 def make_cafe_content(topic):
-    """카페 게시글 HTML 생성."""
+    """카페 게시글 생성. 이중인코딩 제한(~300자)에 맞춰 요약 + 블로그 링크."""
+    import re
+
     # frontmatter 제거하고 본문만 추출
     content = topic["content"]
     parts = content.split("---", 2)
@@ -144,79 +146,67 @@ def make_cafe_content(topic):
     else:
         body = content
 
-    # 마크다운을 간단한 HTML로 변환
-    lines = body.split("\n")
-    html_lines = []
-    in_code = False
-    in_table = False
-
-    for line in lines:
-        if line.strip().startswith("```"):
-            if in_code:
-                html_lines.append("</pre>")
-                in_code = False
-            else:
-                html_lines.append("<pre>")
-                in_code = True
+    # 뉴스 요약 섹션 추출
+    summary = ""
+    in_summary = False
+    for line in body.split("\n"):
+        if "뉴스 요약" in line:
+            in_summary = True
             continue
+        if in_summary:
+            if line.startswith("## "):
+                break
+            clean = re.sub(r'\*\*(.+?)\*\*', r'\1', line).strip()
+            if clean:
+                summary += clean + " "
 
-        if in_code:
-            html_lines.append(line)
-            continue
-
-        # 표 처리
-        if line.strip().startswith("|"):
-            if line.strip().startswith("|--") or line.strip().startswith("| --"):
-                continue  # 구분선 건너뛰기
-            cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if not in_table:
-                html_lines.append("<table border='1' cellpadding='5' cellspacing='0'>")
-                html_lines.append("<tr>" + "".join(f"<th>{c}</th>" for c in cells) + "</tr>")
-                in_table = True
-            else:
-                html_lines.append("<tr>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
-            continue
-        elif in_table:
-            html_lines.append("</table>")
-            in_table = False
-
-        # 제목
-        if line.startswith("## "):
-            html_lines.append(f"<h3>{line[3:]}</h3>")
-        elif line.startswith("### "):
-            html_lines.append(f"<h4>{line[4:]}</h4>")
-        elif line.startswith("- **"):
-            html_lines.append(f"<li>{line[2:]}</li>")
-        elif line.startswith("- "):
-            html_lines.append(f"<li>{line[2:]}</li>")
-        elif line.startswith("> "):
-            html_lines.append(f"<blockquote>{line[2:]}</blockquote>")
-        elif line.strip():
-            # bold 처리
-            import re
-            line = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', line)
-            html_lines.append(f"<p>{line}</p>")
+    summary = summary.strip()
+    # 200자 이내에서 마지막 온전한 문장으로 끊기
+    if len(summary) > 200:
+        cut = summary[:200]
+        # 마지막 마침표/다 위치 찾기
+        last_end = max(cut.rfind("."), cut.rfind("다."), cut.rfind("다 "))
+        if last_end > 50:
+            summary = cut[:last_end + 1].rstrip()
         else:
-            html_lines.append("<br>")
+            summary = cut.rsplit(" ", 1)[0] + "..."
 
-    if in_table:
-        html_lines.append("</table>")
-    if in_code:
-        html_lines.append("</pre>")
+    # 출제 포인트 추출
+    points = []
+    in_points = False
+    for line in body.split("\n"):
+        if "출제 포인트" in line or "출제포인트" in line:
+            in_points = True
+            continue
+        if in_points:
+            if line.startswith("## "):
+                break
+            line = line.strip()
+            if line.startswith("- "):
+                point = re.sub(r'\*\*(.+?)\*\*', r'\1', line[2:]).strip()
+                # 콜론 이후 제거하여 짧게
+                if ":" in point:
+                    point = point.split(":")[0].strip()
+                points.append(point)
 
-    # 블로그 링크 추가
+    # 블로그 링크
     filename = os.path.basename(topic["path"]).replace(".md", "")
-    # 날짜 부분 제거하고 slug 추출
     slug = "-".join(filename.split("-")[3:])
     post_url = f"{BLOG_URL}/posts/{urllib.parse.quote(slug)}/"
 
-    blog_link = (
-        f'<br><hr>'
-        f'<p><b>전체 분석 보기:</b> <a href="{post_url}">{post_url}</a></p>'
-        f'<p><b>기술사 뉴스 블로그:</b> <a href="{BLOG_URL}">{BLOG_URL}</a></p>'
-    )
+    # 카페 게시글 조합
+    lines = []
+    lines.append(f"[{topic['category']}] 기술사 토픽 분석")
+    lines.append("")
+    lines.append(summary)
+    lines.append("")
+    lines.append("기술사 출제 포인트:")
+    for p in points[:4]:
+        lines.append(f"- {p}")
+    lines.append("")
+    lines.append(f"전체 분석: {BLOG_URL}")
 
-    return "\n".join(html_lines) + blog_link
+    return "<br>".join(lines)
 
 
 def post_to_cafe(title, content, token, dry_run=False):
@@ -231,10 +221,15 @@ def post_to_cafe(title, content, token, dry_run=False):
 
     url = f"https://openapi.naver.com/v1/cafe/{CLUB_ID}/menu/{MENU_ID}/articles"
 
-    # 특수문자로 인한 curl 오류 방지: 임시 파일 사용
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".html", delete=False, encoding="utf-8") as f:
-        f.write(content)
-        content_file = f.name
+    # 이중 URL 인코딩 (네이버 카페 API 한글 깨짐 방지)
+    subject_enc = urllib.parse.quote(urllib.parse.quote(title, safe=""), safe="")
+    content_enc = urllib.parse.quote(urllib.parse.quote(content, safe=""), safe="")
+    data_str = f"subject={subject_enc}&content={content_enc}"
+    data_bytes = data_str.encode("utf-8")
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".dat", mode="wb") as f:
+        f.write(data_bytes)
+        data_file = f.name
 
     try:
         result = subprocess.run(
@@ -242,14 +237,14 @@ def post_to_cafe(title, content, token, dry_run=False):
                 "curl", "-s", "-S",
                 "-X", "POST",
                 "-H", f"Authorization: Bearer {token}",
-                "-F", f"subject={title}",
-                "-F", f"content=<{content_file}",
+                "-H", "Content-Type: application/x-www-form-urlencoded; charset=UTF-8",
+                "--data-binary", f"@{data_file}",
                 url,
             ],
             capture_output=True, text=True,
         )
     finally:
-        os.unlink(content_file)
+        os.unlink(data_file)
 
     response = result.stdout or result.stderr
     try:
