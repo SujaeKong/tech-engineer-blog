@@ -80,6 +80,7 @@ def refresh_token(creds, token_data):
         return new_token
     else:
         print(f"[ERROR] 토큰 갱신 실패: {result.stdout}")
+        print("[ERROR] refresh_token이 만료되었을 수 있습니다. 'python3 scripts/naver_auth.py'로 재인증하세요.")
         return None
 
 

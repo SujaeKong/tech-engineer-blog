@@ -4,7 +4,7 @@
 # 2) Claude Code로 분석 + 포스트 생성
 # 3) 커밋 + 푸시
 
-set -e
+set -o pipefail
 
 BLOG_DIR="$HOME/tech-engineer-blog"
 LOG_FILE="$BLOG_DIR/scripts/auto-analyze.log"
