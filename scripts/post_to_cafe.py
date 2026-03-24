@@ -189,10 +189,10 @@ def make_cafe_content(topic):
                     point = point.split(":")[0].strip()
                 points.append(point)
 
-    # 블로그 링크
+    # 블로그 링크 (한글 URL 그대로 사용)
     filename = os.path.basename(topic["path"]).replace(".md", "")
     slug = "-".join(filename.split("-")[3:])
-    post_url = f"{BLOG_URL}/posts/{urllib.parse.quote(slug)}/"
+    post_url = f"{BLOG_URL}/posts/{slug}/"
 
     # 카페 게시글 조합
     lines = []
@@ -204,7 +204,7 @@ def make_cafe_content(topic):
     for p in points[:4]:
         lines.append(f"- {p}")
     lines.append("")
-    lines.append(f"전체 분석: {BLOG_URL}")
+    lines.append(f"원문 링크: {post_url}")
 
     return "<br>".join(lines)
 
