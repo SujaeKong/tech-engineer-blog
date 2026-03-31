@@ -190,12 +190,16 @@ def make_cafe_content(topic):
             if line.startswith("## "):
                 break
             line = line.strip()
-            if line.startswith("- "):
-                point = re.sub(r'\*\*(.+?)\*\*', r'\1', line[2:]).strip()
+            # "- " 또는 "1. " 등 리스트/번호 형식 모두 처리
+            if line.startswith("- ") or re.match(r'^\d+\.\s', line):
+                point = re.sub(r'^\d+\.\s*', '', line)  # 번호 제거
+                point = re.sub(r'^-\s*', '', point)  # 대시 제거
+                point = re.sub(r'\*\*(.+?)\*\*', r'\1', point).strip()
                 # 콜론 이후 제거하여 짧게
                 if ":" in point:
                     point = point.split(":")[0].strip()
-                points.append(point)
+                if point:
+                    points.append(point)
 
     # 블로그 링크 (한글 URL 그대로 사용)
     filename = os.path.basename(topic["path"]).replace(".md", "")
