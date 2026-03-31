@@ -30,7 +30,9 @@ cat <<'PROMPT' | claude -p --allowedTools "Read Write Edit Glob Grep Bash(git:*)
 
 중요: 마크다운 표 작성 시 반드시 표 위에 빈 줄을 넣고, 표 내부 행 사이에는 빈 줄을 넣지 마.
 
-완료 후 git add, commit, push까지 해줘.
+완료 후, 오늘 작성한 포스트 중 다음 회차 정보관리기술사 시험에 출제될 확률이 가장 높은 토픽 1개를 선정해서 _data/today_topic.txt 파일에 해당 포스트의 파일명(예: 2026-03-31-제목.md)만 한 줄로 저장해줘. 선정 기준: 최근 출제 트렌드, 시사성, 기술 중요도.
+
+그 다음 git add, commit, push까지 해줘.
 PROMPT
 echo "$(date '+%Y-%m-%d %H:%M:%S') Claude 종료 코드: $?" >> "$LOG_FILE"
 

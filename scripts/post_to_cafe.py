@@ -85,54 +85,61 @@ def refresh_token(creds, token_data):
 
 
 def find_today_topic():
-    """오늘 포스트 중 출제 확률 높은 토픽 선택."""
+    """Claude가 선정한 오늘의 토픽을 읽거나, 없으면 fallback."""
     today = datetime.now().strftime("%Y-%m-%d")
-    posts = glob.glob(os.path.join(BLOG_DIR, f"_posts/{today}-*.md"))
+    topic_file = os.path.join(BLOG_DIR, "_data", "today_topic.txt")
 
-    if not posts:
-        print(f"[WARN] 오늘({today}) 포스트가 없습니다.")
-        return None
+    # Claude가 선정한 토픽 파일 확인
+    target_filename = None
+    if os.path.exists(topic_file):
+        with open(topic_file, encoding="utf-8") as f:
+            target_filename = f.read().strip()
+        if target_filename:
+            target_path = os.path.join(BLOG_DIR, "_posts", target_filename)
+            if os.path.exists(target_path):
+                print(f"[INFO] Claude 선정 토픽: {target_filename}")
+            else:
+                print(f"[WARN] Claude 선정 파일 없음: {target_filename}, fallback")
+                target_filename = None
 
-    # 카테고리 우선순위로 정렬
-    scored = []
-    for post_path in posts:
-        with open(post_path, encoding="utf-8") as f:
-            content = f.read()
+    # fallback: 오늘 포스트 중 첫 번째
+    if not target_filename:
+        posts = glob.glob(os.path.join(BLOG_DIR, f"_posts/{today}-*.md"))
+        if not posts:
+            print(f"[WARN] 오늘({today}) 포스트가 없습니다.")
+            return None
+        target_path = sorted(posts)[0]
+        target_filename = os.path.basename(target_path)
 
-        # frontmatter에서 제목, 카테고리 추출
-        title = ""
-        category = ""
-        tags = []
-        in_frontmatter = False
-        for line in content.split("\n"):
-            if line.strip() == "---":
-                in_frontmatter = not in_frontmatter
-                continue
-            if in_frontmatter:
-                if line.startswith("title:"):
-                    title = line.split(":", 1)[1].strip().strip('"\'')
-                elif line.startswith("categories:"):
-                    category = line.split(":", 1)[1].strip()
-                elif line.startswith("tags:"):
-                    tags_str = line.split(":", 1)[1].strip()
-                    tags = [t.strip().strip("[]") for t in tags_str.split(",")]
+    # 포스트 파일 읽기
+    post_path = os.path.join(BLOG_DIR, "_posts", target_filename)
+    with open(post_path, encoding="utf-8") as f:
+        content = f.read()
 
-        priority = len(CATEGORY_PRIORITY)
-        if category in CATEGORY_PRIORITY:
-            priority = CATEGORY_PRIORITY.index(category)
+    title = ""
+    category = ""
+    tags = []
+    in_frontmatter = False
+    for line in content.split("\n"):
+        if line.strip() == "---":
+            in_frontmatter = not in_frontmatter
+            continue
+        if in_frontmatter:
+            if line.startswith("title:"):
+                title = line.split(":", 1)[1].strip().strip('"\'')
+            elif line.startswith("categories:"):
+                category = line.split(":", 1)[1].strip()
+            elif line.startswith("tags:"):
+                tags_str = line.split(":", 1)[1].strip()
+                tags = [t.strip().strip("[]") for t in tags_str.split(",")]
 
-        scored.append({
-            "path": post_path,
-            "title": title,
-            "category": category,
-            "tags": tags,
-            "content": content,
-            "priority": priority,
-        })
-
-    # 우선순위 높은 것 선택
-    scored.sort(key=lambda x: x["priority"])
-    return scored[0]
+    return {
+        "path": post_path,
+        "title": title,
+        "category": category,
+        "tags": tags,
+        "content": content,
+    }
 
 
 def make_cafe_content(topic):
