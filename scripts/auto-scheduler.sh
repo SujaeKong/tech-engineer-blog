@@ -15,12 +15,15 @@ echo "[$(date)] 스케줄러 시작 (PID: $$)" >> "$LOG_FILE"
 while true; do
     # 다음 08:00까지 대기
     NOW=$(date +%s)
-    TARGET=$(date -v+1d -j -f "%Y-%m-%d %H:%M:%S" "$(date -v+1d +%Y-%m-%d) 08:00:00" +%s 2>/dev/null)
-
-    # 오늘 08:00이 아직 안 지났으면 오늘로
     TODAY_TARGET=$(date -j -f "%Y-%m-%d %H:%M:%S" "$(date +%Y-%m-%d) 08:00:00" +%s 2>/dev/null)
+
     if [ "$TODAY_TARGET" -gt "$NOW" ]; then
+        # 오늘 08:00이 아직 안 지남
         TARGET=$TODAY_TARGET
+    else
+        # 오늘 08:00 지남 → 내일 08:00
+        TOMORROW=$(date -v+1d +%Y-%m-%d)
+        TARGET=$(date -j -f "%Y-%m-%d %H:%M:%S" "$TOMORROW 08:00:00" +%s 2>/dev/null)
     fi
 
     WAIT=$((TARGET - NOW))
