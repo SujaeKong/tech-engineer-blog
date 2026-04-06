@@ -195,9 +195,11 @@ def make_cafe_content(topic):
                 point = re.sub(r'^\d+\.\s*', '', line)  # 번호 제거
                 point = re.sub(r'^-\s*', '', point)  # 대시 제거
                 point = re.sub(r'\*\*(.+?)\*\*', r'\1', point).strip()
-                # 콜론 이후 제거하여 짧게
+                # 짧게 줄이기: 콜론 이후 제거, 40자 초과 시 자르기
                 if ":" in point:
                     point = point.split(":")[0].strip()
+                if len(point) > 40:
+                    point = point[:40].rsplit(" ", 1)[0] + "..."
                 if point:
                     points.append(point)
 
@@ -218,7 +220,11 @@ def make_cafe_content(topic):
     lines.append("")
     lines.append(f"원문 링크: {post_url}")
 
-    return "<br>".join(lines)
+    result = "<br>".join(lines)
+    # 이중인코딩에서 문제 되는 특수문자 제거
+    result = result.replace('"', '').replace('"', '').replace('"', '')
+    result = result.replace("'", "").replace("'", "").replace("'", "")
+    return result
 
 
 def post_to_cafe(title, content, token, dry_run=False):
