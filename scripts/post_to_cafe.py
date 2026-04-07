@@ -128,7 +128,10 @@ def find_today_topic():
             if line.startswith("title:"):
                 title = line.split(":", 1)[1].strip().strip('"\'')
             elif line.startswith("categories:"):
-                category = line.split(":", 1)[1].strip()
+                cat_raw = line.split(":", 1)[1].strip()
+                # [AI데이터분석, IT경영] → AI데이터분석
+                cat_raw = cat_raw.strip("[]")
+                category = cat_raw.split(",")[0].strip()
             elif line.startswith("tags:"):
                 tags_str = line.split(":", 1)[1].strip()
                 tags = [t.strip().strip("[]") for t in tags_str.split(",")]
@@ -195,11 +198,11 @@ def make_cafe_content(topic):
                 point = re.sub(r'^\d+\.\s*', '', line)  # 번호 제거
                 point = re.sub(r'^-\s*', '', point)  # 대시 제거
                 point = re.sub(r'\*\*(.+?)\*\*', r'\1', point).strip()
-                # 짧게 줄이기: 콜론 이후 제거, 40자 초과 시 자르기
+                # 콜론 이후 제거하여 짧게 (전체 문장이 아닌 키워드만)
                 if ":" in point:
                     point = point.split(":")[0].strip()
-                if len(point) > 40:
-                    point = point[:40].rsplit(" ", 1)[0] + "..."
+                # 마침표 제거
+                point = point.rstrip(".")
                 if point:
                     points.append(point)
 
