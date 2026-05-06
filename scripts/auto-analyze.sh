@@ -72,6 +72,18 @@ PROMPT
 echo "$(date '+%Y-%m-%d %H:%M:%S') Claude 종료 코드: $?" >> "$LOG_FILE"
 
 # 오늘의 토픽을 네이버 카페에 자동 게시
+# 포스트 내부 링크 자동 검증/수정
+echo "$(date '+%Y-%m-%d %H:%M:%S') 링크 검증 시작..." >> "$LOG_FILE"
+python3 "$BLOG_DIR/scripts/fix_links.py" >> "$LOG_FILE" 2>&1 || true
+
+# 링크 수정이 있었으면 추가 커밋
+cd "$BLOG_DIR"
+if ! git diff --quiet _posts/; then
+    git add _posts/
+    git commit -m "chore: auto-fix broken internal links" >> "$LOG_FILE" 2>&1
+    git push >> "$LOG_FILE" 2>&1
+fi
+
 echo "$(date '+%Y-%m-%d %H:%M:%S') 카페 게시 시작..." >> "$LOG_FILE"
 python3 "$BLOG_DIR/scripts/post_to_cafe.py" >> "$LOG_FILE" 2>&1 || true
 
