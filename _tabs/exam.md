@@ -14,7 +14,7 @@ title: 출제예상
 포스트 준비 중입니다.
 {% else %}
 
-## 139회 대비 (2026-08 시행 예정)
+## 139회 대비 (2026-05-16 시행)
 
 {% for post in exam_posts %}
   {% if post.tags contains '139회대비' %}
