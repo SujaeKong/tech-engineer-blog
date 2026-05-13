@@ -1,0 +1,307 @@
+{
+  "target_round": 139,
+  "predicted_date": "2026-05-13",
+  "algorithm": "v6",
+  "top50": [
+    {
+      "rank": 1,
+      "keyword": "Agentic",
+      "category": "AI데이터분석",
+      "score": 131.2
+    },
+    {
+      "rank": 2,
+      "keyword": "제로트러스트",
+      "category": "정보보안",
+      "score": 110.56
+    },
+    {
+      "rank": 3,
+      "keyword": "ISMS-P",
+      "category": "정보보안",
+      "score": 109.16
+    },
+    {
+      "rank": 4,
+      "keyword": "에이전트",
+      "category": "AI데이터분석",
+      "score": 109.0
+    },
+    {
+      "rank": 5,
+      "keyword": "멀티모달",
+      "category": "AI데이터분석",
+      "score": 93.37
+    },
+    {
+      "rank": 6,
+      "keyword": "MCP",
+      "category": "정보보안",
+      "score": 93.33
+    },
+    {
+      "rank": 7,
+      "keyword": "랜섬웨어",
+      "category": "정보보안",
+      "score": 93.1
+    },
+    {
+      "rank": 8,
+      "keyword": "이동통신",
+      "category": "네트워크",
+      "score": 86.28
+    },
+    {
+      "rank": 9,
+      "keyword": "스마트시티",
+      "category": "신기술융합",
+      "score": 83.05
+    },
+    {
+      "rank": 10,
+      "keyword": "LLM",
+      "category": "AI데이터분석",
+      "score": 78.95
+    },
+    {
+      "rank": 11,
+      "keyword": "대가산정",
+      "category": "IT경영",
+      "score": 73.82
+    },
+    {
+      "rank": 12,
+      "keyword": "교착상태",
+      "category": "시스템구조",
+      "score": 73.12
+    },
+    {
+      "rank": 13,
+      "keyword": "화이트박스",
+      "category": "소프트웨어공학",
+      "score": 68.89
+    },
+    {
+      "rank": 14,
+      "keyword": "가상메모리",
+      "category": "시스템구조",
+      "score": 67.3
+    },
+    {
+      "rank": 15,
+      "keyword": "OSI",
+      "category": "네트워크",
+      "score": 65.65
+    },
+    {
+      "rank": 16,
+      "keyword": "PET",
+      "category": "정보보안",
+      "score": 57.75
+    },
+    {
+      "rank": 17,
+      "keyword": "AI-RAN",
+      "category": "네트워크",
+      "score": 57.55
+    },
+    {
+      "rank": 18,
+      "keyword": "Inversion",
+      "category": "정보보안",
+      "score": 54.67
+    },
+    {
+      "rank": 19,
+      "keyword": "디지털 포렌식",
+      "category": "정보보안",
+      "score": 54.45
+    },
+    {
+      "rank": 20,
+      "keyword": "딥페이크",
+      "category": "정보보안",
+      "score": 54.45
+    },
+    {
+      "rank": 21,
+      "keyword": "RaaS",
+      "category": "정보보안",
+      "score": 53.85
+    },
+    {
+      "rank": 22,
+      "keyword": "양자컴퓨팅",
+      "category": "신기술융합",
+      "score": 53.5
+    },
+    {
+      "rank": 23,
+      "keyword": "RAG",
+      "category": "AI데이터분석",
+      "score": 53.36
+    },
+    {
+      "rank": 24,
+      "keyword": "HBM",
+      "category": "시스템구조",
+      "score": 52.19
+    },
+    {
+      "rank": 25,
+      "keyword": "SaaS",
+      "category": "IT경영",
+      "score": 51.79
+    },
+    {
+      "rank": 26,
+      "keyword": "생성형AI",
+      "category": "AI데이터분석",
+      "score": 50.48
+    },
+    {
+      "rank": 27,
+      "keyword": "인공지능기본법 주요",
+      "category": "AI거버넌스",
+      "score": 50.0
+    },
+    {
+      "rank": 28,
+      "keyword": "Wi-Fi",
+      "category": "네트워크",
+      "score": 49.28
+    },
+    {
+      "rank": 29,
+      "keyword": "SDN",
+      "category": "네트워크",
+      "score": 48.93
+    },
+    {
+      "rank": 30,
+      "keyword": "DevOps",
+      "category": "소프트웨어공학",
+      "score": 47.88
+    },
+    {
+      "rank": 31,
+      "keyword": "최근 생성형",
+      "category": "AI데이터분석",
+      "score": 47.73
+    },
+    {
+      "rank": 32,
+      "keyword": "CBDC",
+      "category": "신기술융합",
+      "score": 47.53
+    },
+    {
+      "rank": 33,
+      "keyword": "ITSM",
+      "category": "IT경영",
+      "score": 47.38
+    },
+    {
+      "rank": 34,
+      "keyword": "이동통신기술",
+      "category": "네트워크",
+      "score": 47.0
+    },
+    {
+      "rank": 35,
+      "keyword": "APT",
+      "category": "정보보안",
+      "score": 46.0
+    },
+    {
+      "rank": 36,
+      "keyword": "멀티모달 데이터",
+      "category": "AI데이터분석",
+      "score": 44.5
+    },
+    {
+      "rank": 37,
+      "keyword": "Transformer",
+      "category": "AI데이터분석",
+      "score": 44.31
+    },
+    {
+      "rank": 38,
+      "keyword": "생성형 인공지능",
+      "category": "AI데이터분석",
+      "score": 44.2
+    },
+    {
+      "rank": 39,
+      "keyword": "SBOM",
+      "category": "소프트웨어공학",
+      "score": 43.7
+    },
+    {
+      "rank": 40,
+      "keyword": "양자 머신러닝",
+      "category": "신기술융합",
+      "score": 42.5
+    },
+    {
+      "rank": 41,
+      "keyword": "우선순위 역전",
+      "category": "시스템구조",
+      "score": 40.76
+    },
+    {
+      "rank": 42,
+      "keyword": "ISP",
+      "category": "IT경영",
+      "score": 40.72
+    },
+    {
+      "rank": 43,
+      "keyword": "블랙박스 테스트",
+      "category": "소프트웨어공학",
+      "score": 40.25
+    },
+    {
+      "rank": 44,
+      "keyword": "MSA",
+      "category": "시스템구조",
+      "score": 39.97
+    },
+    {
+      "rank": 45,
+      "keyword": "Banker",
+      "category": "시스템구조",
+      "score": 39.97
+    },
+    {
+      "rank": 46,
+      "keyword": "서버리스",
+      "category": "시스템구조",
+      "score": 37.78
+    },
+    {
+      "rank": 47,
+      "keyword": "클라우드 네이티브",
+      "category": "시스템구조",
+      "score": 36.85
+    },
+    {
+      "rank": 48,
+      "keyword": "디지털 트윈",
+      "category": "신기술융합",
+      "score": 36.73
+    },
+    {
+      "rank": 49,
+      "keyword": "SOAP",
+      "category": "소프트웨어공학",
+      "score": 35.55
+    },
+    {
+      "rank": 50,
+      "keyword": "디지털 전환",
+      "category": "IT경영",
+      "score": 35.42
+    }
+  ]
+}
