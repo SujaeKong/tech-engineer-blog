@@ -80,7 +80,11 @@ def fetch_rss(keyword: str, days: int = 7) -> list[dict]:
         print(f"  [WARN] '{keyword}' 수집 실패: {e}", file=sys.stderr)
         return []
 
-    root = ElementTree.fromstring(xml_data)
+    try:
+        root = ElementTree.fromstring(xml_data)
+    except ElementTree.ParseError as e:
+        print(f"  [WARN] '{keyword}' XML 파싱 실패 (RSS 응답 손상): {e}", file=sys.stderr)
+        return []
     cutoff = datetime.now() - timedelta(days=days)
     items = []
 
