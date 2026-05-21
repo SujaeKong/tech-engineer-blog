@@ -16,12 +16,19 @@ POSTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_pos
 BASE_PATH = "/tech-engineer-blog/posts"
 
 
+def normalize_slug(s):
+    """Jekyll URL 생성 규칙에 맞춰 슬러그 정규화 — 대괄호 등 특수문자 제거 후 연속 하이픈 압축"""
+    s = re.sub(r"[\[\]()]", "", s)
+    s = re.sub(r"-+", "-", s).strip("-")
+    return s
+
+
 def get_existing_slugs():
     slugs = set()
     for f in glob.glob(os.path.join(POSTS_DIR, "*.md")):
         name = os.path.basename(f).replace(".md", "")
         slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", name)
-        slugs.add(slug)
+        slugs.add(normalize_slug(slug))
     return slugs
 
 
@@ -55,7 +62,7 @@ def fix_post(filepath, valid_slugs):
     broken = []
     for m in re.finditer(rf"\]\({re.escape(BASE_PATH)}/([^)]+?)/?\)", content):
         slug = urllib.parse.unquote(m.group(1).rstrip("/"))
-        if slug not in valid_slugs:
+        if normalize_slug(slug) not in valid_slugs:
             broken.append(slug)
 
     if changed:
