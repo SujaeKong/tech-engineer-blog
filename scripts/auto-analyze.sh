@@ -6,7 +6,8 @@
 
 # 개별 실패가 전체를 중단하지 않도록 set -e 사용 안 함
 
-BLOG_DIR="$HOME/tech-engineer-blog"
+# 스크립트 자기 위치(scripts/) 기준으로 리포 루트를 계산 → 어디에 clone하든 동작
+BLOG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOG_FILE="$HOME/.tech-engineer-blog-auto.log"
 
 # crontab 환경에서 PATH 설정
@@ -24,7 +25,7 @@ git pull >> "$LOG_FILE" 2>&1
 # Claude Code로 분석 및 포스트 생성
 echo "$(date '+%Y-%m-%d %H:%M:%S') Claude 분석 시작..." >> "$LOG_FILE"
 cat <<'PROMPT' | claude -p --allowedTools "Read Write Edit Glob Grep Bash(git:*) Bash(ls:*)" >> "$LOG_FILE" 2>&1
-~/tech-engineer-blog/_data/news_raw.json 파일을 읽고, 기술사 출제분야 8개 카테고리(소프트웨어공학/데이터베이스/네트워크/정보보안/IT경영/시스템구조/AI데이터분석/신기술융합) 관점에서 의미있는 뉴스를 선별하여 토픽 분석 포스트를 작성해줘.
+_data/news_raw.json 파일을 읽고, 기술사 출제분야 8개 카테고리(소프트웨어공학/데이터베이스/네트워크/정보보안/IT경영/시스템구조/AI데이터분석/신기술융합) 관점에서 의미있는 뉴스를 선별하여 토픽 분석 포스트를 작성해줘.
 
 **뉴스 선별 기준 (엄격하게 적용)**:
 - ✅ 채택: 정부/공공기관 정책·표준 발표, 국제 표준 제정, 보안 사고/취약점, 신기술 출시, 학술 연구 성과, 기업의 의미있는 기술 발표
