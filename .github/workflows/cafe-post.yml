@@ -1,0 +1,43 @@
+name: "Cafe Post"
+on:
+  push:
+    branches: [master]
+    # 분석 단계가 '오늘의 토픽'을 갱신할 때만 트리거.
+    # (링크 수정 커밋은 _posts/ 만 건드리므로 재트리거되지 않음 → 무한루프 방지)
+    paths:
+      - "_data/today_topic.txt"
+  workflow_dispatch: # 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  cafe-post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fix broken internal links
+        run: |
+          python3 scripts/fix_links.py
+          if ! git diff --quiet _posts/; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add _posts/
+            git commit -m "chore: auto-fix broken internal links"
+            git push
+          fi
+
+      - name: Post today's topic to Naver Cafe
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_REFRESH_TOKEN: ${{ secrets.NAVER_REFRESH_TOKEN }}
+        run: python3 scripts/post_to_cafe.py

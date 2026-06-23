@@ -20,7 +20,7 @@ import sys
 import urllib.parse
 from datetime import datetime
 
-# 스크립트 위치(scripts/) 기준으로 리포 루트 계산 → 어디에 clone하든 동작
+# 스크립트 위치(scripts/) 기준으로 리포 루트 계산 → PC/CI 어디서든 동작
 BLOG_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 CRED_FILE = os.path.expanduser("~/.naver-cafe-api")
 TOKEN_FILE = os.path.expanduser("~/.naver-cafe-token")
@@ -43,20 +43,35 @@ CATEGORY_PRIORITY = [
 
 
 def load_credentials():
-    """API 크리덴셜 로드."""
-    creds = {}
-    with open(CRED_FILE) as f:
-        for line in f:
-            if "=" in line:
-                k, v = line.strip().split("=", 1)
-                creds[k] = v
-    return creds
+    """API 크리덴셜 로드 (파일 우선, 없으면 환경변수 — CI용)."""
+    if os.path.exists(CRED_FILE):
+        creds = {}
+        with open(CRED_FILE) as f:
+            for line in f:
+                if "=" in line:
+                    k, v = line.strip().split("=", 1)
+                    creds[k] = v
+        return creds
+    # CI: GitHub Secrets를 환경변수로 주입
+    return {
+        "NAVER_CLIENT_ID": os.environ.get("NAVER_CLIENT_ID", ""),
+        "NAVER_CLIENT_SECRET": os.environ.get("NAVER_CLIENT_SECRET", ""),
+    }
 
 
 def load_token():
-    """OAuth 토큰 로드."""
-    with open(TOKEN_FILE) as f:
-        return json.load(f)
+    """OAuth 토큰 로드 (파일 우선, 없으면 환경변수의 refresh_token — CI용).
+
+    CI에선 access_token이 매번 만료돼 있으므로 refresh_token만 받고,
+    access_token은 main()에서 갱신해 획득한다.
+    """
+    if os.path.exists(TOKEN_FILE):
+        with open(TOKEN_FILE) as f:
+            return json.load(f)
+    return {
+        "access_token": "",
+        "refresh_token": os.environ.get("NAVER_REFRESH_TOKEN", ""),
+    }
 
 
 def refresh_token(creds, token_data):
@@ -306,7 +321,15 @@ def main():
     # 토큰 로드
     creds = load_credentials()
     token_data = load_token()
-    access_token = token_data["access_token"]
+    access_token = token_data.get("access_token", "")
+
+    # access_token이 없으면(CI 등) refresh_token으로 먼저 갱신
+    if not access_token:
+        token_data = refresh_token(creds, token_data) or {}
+        access_token = token_data.get("access_token", "")
+        if not access_token:
+            print("[ERROR] access_token 획득 실패 (refresh_token 확인 필요)")
+            sys.exit(1)
 
     # 게시 시도
     success = post_to_cafe(cafe_title, cafe_content, access_token)
