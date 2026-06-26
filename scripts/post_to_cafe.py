@@ -20,7 +20,8 @@ import sys
 import urllib.parse
 from datetime import datetime
 
-BLOG_DIR = os.path.expanduser("~/tech-engineer-blog")
+# 스크립트 위치(scripts/) 기준으로 리포 루트 계산 → 어디에 clone하든 동작
+BLOG_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 CRED_FILE = os.path.expanduser("~/.naver-cafe-api")
 TOKEN_FILE = os.path.expanduser("~/.naver-cafe-token")
 BLOG_URL = "https://sujaekong.github.io/tech-engineer-blog"
