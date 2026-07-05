@@ -15,9 +15,16 @@ bash scripts/auto-analyze.sh
 `auto-analyze.sh`가 하는 일 (자세한 건 스크립트 주석 참고):
 1. `git checkout -- . && git clean -fd && git pull` — GitHub Actions가 수집한 `_data/news_raw.json` 최신본 받기
 2. `claude -p`로 뉴스 분석 → 카테고리 부족분 우선으로 포스트 3개 작성 → 오늘의 토픽을 `_data/today_topic.txt`에 저장 → commit + push
-3. `scripts/fix_links.py` — 깨진 내부 링크 자동 수정 후 추가 커밋/푸시
-4. `scripts/post_to_cafe.py` — 오늘의 토픽을 네이버 카페에 게시
-5. 로그: `~/.tech-engineer-blog-auto.log`
+3. 로그: `~/.tech-engineer-blog-auto.log`
+
+**링크 수정 + 카페 게시는 로컬이 아니라 CI가 전담한다.** 2단계에서 `today_topic.txt`가 push되면
+GitHub Actions(`.github/workflows/cafe-post.yml`)가 자동으로:
+- `scripts/fix_links.py` — 깨진 내부 링크 자동 수정 후 커밋
+- `scripts/post_to_cafe.py` — 오늘의 토픽을 네이버 카페에 게시
+
+를 수행한다. 로컬(맥)에서 돌리든 웹/클라우드에서 돌리든 **카페 게시는 CI 단일 경로로만** 일어나므로
+이중 게시가 없다. 웹/클라우드 컨테이너는 naver.com 접속이 막혀 있어도 CI가 GitHub 서버에서 게시하므로 문제없다.
+CI는 네이버 인증을 저장소 Secrets(`NAVER_CLIENT_ID` / `NAVER_CLIENT_SECRET` / `NAVER_REFRESH_TOKEN`)에서 읽는다.
 
 ### 실행 전 확인할 것
 - **경로 독립적**: 스크립트는 자기 위치 기준으로 리포 루트를 잡으므로 어디에 clone해도 동작한다.

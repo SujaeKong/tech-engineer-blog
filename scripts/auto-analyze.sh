@@ -3,6 +3,8 @@
 # 1) git pull (GitHub Actions가 수집한 최신 데이터)
 # 2) Claude Code로 분석 + 포스트 생성
 # 3) 커밋 + 푸시
+# 4) 링크수정 + 카페게시는 push 이후 GitHub Actions(cafe-post.yml)가 전담
+#    → 로컬/웹 어디서 돌리든 카페 게시는 CI 단일 경로로만 일어난다 (이중 게시 방지)
 
 # 개별 실패가 전체를 중단하지 않도록 set -e 사용 안 함
 
@@ -72,20 +74,10 @@ _data/news_raw.json 파일을 읽고, 기술사 출제분야 8개 카테고리(�
 PROMPT
 echo "$(date '+%Y-%m-%d %H:%M:%S') Claude 종료 코드: $?" >> "$LOG_FILE"
 
-# 오늘의 토픽을 네이버 카페에 자동 게시
-# 포스트 내부 링크 자동 검증/수정
-echo "$(date '+%Y-%m-%d %H:%M:%S') 링크 검증 시작..." >> "$LOG_FILE"
-python3 "$BLOG_DIR/scripts/fix_links.py" >> "$LOG_FILE" 2>&1 || true
+# 링크 수정(fix_links.py) + 카페 게시(post_to_cafe.py)는 여기서 하지 않는다.
+# 위 분석 단계에서 today_topic.txt가 push되면 GitHub Actions(.github/workflows/cafe-post.yml)가
+# 자동으로 ① 깨진 내부 링크 수정 커밋 ② 오늘의 토픽 네이버 카페 게시를 수행한다.
+# 로컬에서 게시하면 CI 게시와 겹쳐 이중 게시가 되므로, 게시는 CI에 일임한다.
+# (이 세션처럼 naver.com 접속이 막힌 웹/클라우드 환경에서도 CI가 GitHub 서버에서 게시하므로 문제없다.)
 
-# 링크 수정이 있었으면 추가 커밋
-cd "$BLOG_DIR"
-if ! git diff --quiet _posts/; then
-    git add _posts/
-    git commit -m "chore: auto-fix broken internal links" >> "$LOG_FILE" 2>&1
-    git push >> "$LOG_FILE" 2>&1
-fi
-
-echo "$(date '+%Y-%m-%d %H:%M:%S') 카페 게시 시작..." >> "$LOG_FILE"
-python3 "$BLOG_DIR/scripts/post_to_cafe.py" >> "$LOG_FILE" 2>&1 || true
-
-echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 완료 =====" >> "$LOG_FILE"
+echo "===== $(date '+%Y-%m-%d %H:%M:%S') 자동 분석 완료 (링크수정·카페게시는 CI가 처리) =====" >> "$LOG_FILE"
