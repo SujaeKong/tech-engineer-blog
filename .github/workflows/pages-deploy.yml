@@ -16,9 +16,11 @@ permissions:
   pages: write
   id-token: write
 
+# 배포끼리 겹칠 때 서로 취소(cancel)하면 GitHub Pages 배포 백엔드가 먹통(stuck)이 될 수 있어
+# false로 둔다 → 겹치면 취소 대신 큐에 대기. (GitHub 공식 Pages 워크플로우 권장값)
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
