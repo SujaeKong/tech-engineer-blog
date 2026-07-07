@@ -3,6 +3,7 @@ layout: post
 title: "네이버 실행형 에이전트 AI 기술 공개와 Agentic AI 자율실행 아키텍처"
 date: 2026-07-06
 categories: 소프트웨어공학
+description: "네이버 실행형 AI(Agentic AI) 공개. 에이전트 구성요소·오케스트레이션·도구 사용과 안전장치를 정보관리기술사 소프트웨어공학 관점에서 정리한다."
 tags: [AgenticAI, AI에이전트, 실행형AI, 오케스트레이션, ToolUse, 자율에이전트, LLM, 플래닝, 소프트웨어아키텍처, 소프트웨어공학]
 source_url: ""
 ---
