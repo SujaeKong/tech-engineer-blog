@@ -1,14 +1,38 @@
 {
-  "fetched_at": "2026-07-15 22:53:43",
+  "fetched_at": "2026-07-16 22:52:08",
   "days": 2,
-  "total": 80,
+  "total": 72,
   "articles": [
+    {
+      "title": "오픈소스컨설팅, ‘플레이스 컨테이너’, ‘플레이스 GPUOps’ 출시",
+      "full_title": "오픈소스컨설팅, ‘플레이스 컨테이너’, ‘플레이스 GPUOps’ 출시 - 아이티데일리",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NRWJwZUN5Yjd6WVl6NUtHQl9zWjRJTTRMMFU5LUFXeVZDVnhwc3l1SEp0Tk5RMlhXR0ZzZE1nbWdEY29ZZTZScVdBTTRIUm9fY2c0ZUNaWE9lTjdNcldXenlZcTk5MWxh?oc=5",
+      "source": "아이티데일리",
+      "pub_date": "2026-07-16",
+      "keyword": "클라우드 컨테이너 쿠버네티스"
+    },
+    {
+      "title": "[팁] VM·컨테이너·서버리스 선택 전 반드시 따져야 하는 6가지",
+      "full_title": "[팁] VM·컨테이너·서버리스 선택 전 반드시 따져야 하는 6가지 - 한국클라우드신문",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5NWDZLS0w4SW5zVDZKVFl3elF2YW9Wd25CbWRTQkl2aFNVeXR4MWlyMHVvd0RqdGE3N250Nl9fVktQSjVrYnR0OEowN2lMSjVaRjV5U3ctTGdQZzZzWEV2RTJxcHozV0REd1JibEE3Y9IBc0FVX3lxTE1ZSGppS3lJVVZidFpxVzI5YlNDVjY2d3BTeG1SSDltTmhXYW5tRUE0bFpjQzE5eWlUWHdDTWM1dDZMWEJJd3N4UUJuc0VWZkNGd0s1Yk93YjJDZWNpQUZCYVJkSGd6cjJIME5hQXRwckVsTlk?oc=5",
+      "source": "한국클라우드신문",
+      "pub_date": "2026-07-16",
+      "keyword": "클라우드 컨테이너 쿠버네티스"
+    },
     {
       "title": "KINX, IXcloud의 관리형 쿠버네티스 서비스 고도화",
       "full_title": "KINX, IXcloud의 관리형 쿠버네티스 서비스 고도화 - 디일렉",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53TDlXMlRWWXp1Rnh6S1ZVSVN1TUYxcnVLdkNaeWl4aXRoZ3VxQ1RRVUVIVlJqODFBaHBmQW9ZSlBIdUxqcGtOX2JlU18tTkNlbVRlQUxPQWlHVFR2Yi1wLVNNeXZPZw?oc=5",
       "source": "디일렉",
       "pub_date": "2026-07-15",
+      "keyword": "클라우드 컨테이너 쿠버네티스"
+    },
+    {
+      "title": "AI 개발·GPU 운영 한번에…오픈소스컨설팅, 신제품 2종 출시",
+      "full_title": "AI 개발·GPU 운영 한번에…오픈소스컨설팅, 신제품 2종 출시 - 지디넷코리아",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51VkxMMjhYdVNEejRYMjFvbVJCN0U5ckt4bTZiT0w4TUJfYjN6TVUxeWFUSkdsamFTNGRBWkl6UG5Rb0dMU01rME5xb3duOF81c0p1Q3pB?oc=5",
+      "source": "지디넷코리아",
+      "pub_date": "2026-07-16",
       "keyword": "클라우드 컨테이너 쿠버네티스"
     },
     {
@@ -20,34 +44,322 @@
       "keyword": "클라우드 컨테이너 쿠버네티스"
     },
     {
-      "title": "가비아, 쿠버네티스 전담 지원 체계 구축…클라우드 네이티브 전환 가속",
-      "full_title": "가비아, 쿠버네티스 전담 지원 체계 구축…클라우드 네이티브 전환 가속 - MSN",
-      "link": "https://news.google.com/rss/articles/CBMi3ARBVV95cUxOd0ZVSElDWnBnQmZjN2JBYW9Lb1Z0QTlrRjh3QWl6cmN2RG51VVZoRkNWQm1fS3NpYjhTbVV2RGF6dmJ6NjRhM2MyS3JKUDhqUXRlWFBFV09MXzlpMmgxU2hwZ0lab0o2TzJ4blpRU2hMNm42ZjNRU2lwR3VIazNYREdUdjNCamN5MU5xMS1LcWFxNFd0QjdFT2F2VFVsSTZEdEM3VnpkaG84a05WaXZwcXRMQXBZWkVoS1J5aGFhVUFkTkUxZUNma19FUFhzZDdlRi1TZlYxOTZwdlRhcVRnek1Ba3NtYmllWk8xWjc3RGNyTktCLTFyZmZ5dGNEX3NHbkl0bnNsN2o0LXE3ZTdmTFVOd1plcnFVMnJESnQ4OTFQQnpKcmlmMmhJd2J4UWJZVmpyOWZ5R1RyWFFhN1c4RlBSTUpUSUdLM1pPYzkyTUdJVmFxbDByNk5wdkVWdklzSFlUSUVidEYzMUsxNkRIcEs2YlM3d0VWOFZEQW84Zl81SGdOQlpMbEpYeC01X3hJZE9NTXRnYURaWF9RYlEwMDZKcXIwVGxMeWVYbFlxRTZXX0Z3Ykp6aF9KdUZMcG53em5qQW95ZmtieUxKSEs4NlpKYmhpYW5VYzhuMDhUcnh2ZTNRb1ZFc3A1TnlQUU0teG9Bb21CMEpHcWpkbThLaGY5M2J3R0R5SER5NWtMbWRzdm5fXzFDVjFRNUVtaG1fQUJNMDZZM01XS0d2dzV5N3NHTTh4UkVYT3BtcVFiUWJXY3BBSnRYc01wSG1Xd3hMU3VuYVBVcnc0MmlX?oc=5",
-      "source": "MSN",
-      "pub_date": "2026-07-15",
-      "keyword": "클라우드 컨테이너 쿠버네티스"
-    },
-    {
-      "title": "진도 대표 디저트, AI 기술 만나 상품 경쟁력 입증",
-      "full_title": "진도 대표 디저트, AI 기술 만나 상품 경쟁력 입증 - 전남인터넷신문",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KVXZwemg2OUdwOUpQdWpaaUJOaXV1SVBCN3dqbElCbG9nVHVLSmc4SFYxWlBhN1RJMTl4c19vNFRPdUFZSkNvUUNvMUtBOWlnVlBRcmk1d0llQ29q?oc=5",
-      "source": "전남인터넷신문",
-      "pub_date": "2026-07-15",
+      "title": "안양시, ‘인공지능(AI) 정책 자문단’ 출범",
+      "full_title": "안양시, ‘인공지능(AI) 정책 자문단’ 출범 - 경기헤럴드",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vMnlhSzNqaXM1ZXRFa01LQUU5ZjFQMHR1WFBfT2hZeU8yNEMwWVdIRDdhaUhzcXRpOS1zRFdiNHdHMXlRUUpIcVp2dFBaSFNJbl9ZVEVyRlRvNWN3a2EzZFN0SDFBSk1KSV9HSEt4R0lOMjhjZEhSOXJsY00?oc=5",
+      "source": "경기헤럴드",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "경기도일자리재단, AI시대 일자리정책으로 ‘직무 전환 훈련’ 중심 패키지 제안",
-      "full_title": "경기도일자리재단, AI시대 일자리정책으로 ‘직무 전환 훈련’ 중심 패키지 제안 - 경기도뉴스포털",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWGQ0YzVmTTcwSmZ4Y0Q3Uzg0ZnV5UmhKZkFCejk3ZFpjRDAwODlTTGJWZ2J3MGIyMHlWcHJZdVlUU3otNXR0RGlVWkhCdUhqQVBlT1J0WjQzbWR4aGpHRnZLOThCcHRVaDVDTlZEVmRBcmpVQ2RLVTBOTVZDcjNJcFR3TGM?oc=5",
-      "source": "경기도뉴스포털",
-      "pub_date": "2026-07-15",
+      "title": "산울초 ‘2026 소프트웨어(SW)·인공지능(AI) 체험주간’ 운영",
+      "full_title": "산울초 ‘2026 소프트웨어(SW)·인공지능(AI) 체험주간’ 운영 - 세종의소리",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wZFVBRVN1VEo4eWd0MmFNSU83aUlkZTlTLUsxaDhJZnBrVmRCTWVSR01nRlhfNDVYTTdIRG16Zms5YlhBRU1mZ2V1Z0UwZXRLb1VCdHR5Uno0NUxmQ3Yyc2hVSjh6VVE?oc=5",
+      "source": "세종의소리",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "상하이서 세계인공지능대회 17일 개막…미중경쟁 속 AI자립 과시",
-      "full_title": "상하이서 세계인공지능대회 17일 개막…미중경쟁 속 AI자립 과시 - 연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2SU9OVWU2d1dNZWVTNFNVRmxCNV9xX0puRUMwZUg0UTVKbi1Zelkya2drQlNaQi1RSlhfeTFaTXNXeGFyNU9ya0hFSWVHWkdMMXlDY1loRmx0czDSAWBBVV95cUxQaUJUemwyUnJiZXh1YnVGVkY2QjFFT2ZtTmZFM0duNUZxTnY4RzZZdVhTNGhlWnExblFPUWFsV1hLUXVvYV8tRmxteVNmZ05ja1BiSjJsMG9uc2VoNXY2Q3k?oc=5",
+      "title": "AI가 부른 일자리 포비아… ‘실물 위협’에 경호비 늘리는 실리콘밸리",
+      "full_title": "AI가 부른 일자리 포비아… ‘실물 위협’에 경호비 늘리는 실리콘밸리 - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTlZuWGRhd0d1TkpPaEp1TW1wNzB4VElwZnQ1MTZZRXRxR2dWNFBHZmdzMHNPeHVFU0tzYTF0N1BoVUpKamtHV3liOG4ybnhDcEFyZEtnMHlDS05wQXFQS1BUMnYwcHA4Y0MwY3p5YXBTNnlVY0pvZk9IZm40QlNZeVVFakg4VWow?oc=5",
+      "source": "글로벌이코노믹",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "2026 전주세계소리축제, 전통 판소리와 인공지능(AI) 기술을 결합한 참여형 공모전",
+      "full_title": "2026 전주세계소리축제, 전통 판소리와 인공지능(AI) 기술을 결합한 참여형 공모전 - 대한지방자치뉴스",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOHpSeVh2VkRrTVpoZ3JXLXNJTU41ZUwtcWdDX0I4TGU0anNQMDlwR01JZnMxeGJCY1poa1JnVHhPR09NeW53RnRlcVlTZE9kdExtZVRScUNOYUphWDVLblJyb0x4TS16dU54S3pzNS1CWVdYenZpRUJIVHd0SnhNSVNaZDZHNnFwb3Bob2ttSXY0Z1hXOFVNNWdzelNHeUdsUXNXUV9R?oc=5",
+      "source": "대한지방자치뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "수성구, 인공지능(AI) 시대 행정 대전환 모색, ‘수미창조포럼’에서 미래 경쟁력 전략 제시",
+      "full_title": "수성구, 인공지능(AI) 시대 행정 대전환 모색, ‘수미창조포럼’에서 미래 경쟁력 전략 제시 - 시사뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5hZEIzem9TOUl6TG9ISTBDMGdMMlFRdEhuTXRDYTJaeUJrYVAtLWcydHRYYkRWT2IxSERXTTU0NF8weXJySENWMVJ6UmI3VndxaUxSR1YzeGVvSVlBRDYybG13VQ?oc=5",
+      "source": "시사뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "엔비디아, 도요타와 피지컬 AI 기술 협력",
+      "full_title": "엔비디아, 도요타와 피지컬 AI 기술 협력 - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PTE1WLXAwRUVwMzh6Z2haSTJsWXdsMmJGcURMMHJ5d1BmTVdWUUFOR2FQUEhWWmFHZEU5clJ4Z3FEbkNfRkVMNUVTUUpqMU1sUlhMZ2xhWEZkWmdEZmJwQzBQcWh1ejFDWmRqSlM5MTc?oc=5",
+      "source": "연합인포맥스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 여수공장 대정비작업 마무리…디지털·AI 기술 적용",
+      "full_title": "GS칼텍스, 여수공장 대정비작업 마무리…디지털·AI 기술 적용 - 경향신문",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LejVjU3JtVXUtSmpRb0stVG9xWTRKeVRFYThLbUFfSlBJNzU1S19hQ2VWWGJLNUFvajdETjBOZEtCNDdpak9PMngyeDBxajBJU0dSZGUtbmdSQdIBX0FVX3lxTE9kQ2J1SXBGR3BlUW5Rclc1X0FFUnBLbWI4VXdxeEx5ZzVudlFHRjEzYlE4VHZCQUhHZGI2TmFoaDYxYjBJb21TVThHTk5tMzJrVmhJTXg1OFVVTjRXd2pB?oc=5",
+      "source": "경향신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "“일자리 뺏길라” 살해 협박·화염병 투척…AI 공포 덮친 실리콘밸리 비상",
+      "full_title": "“일자리 뺏길라” 살해 협박·화염병 투척…AI 공포 덮친 실리콘밸리 비상 - 경기일보",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yTS1YT1pjWW5TcW5lT2oyZTVBMm14TWJ2czY3R0VVdXQ4TERudXV2UzQxQ3J1WENpNjJ0S0ppRE9ad3k0c3hkNzNxVjltc0lpTEV5T2tqQi1kZDQ?oc=5",
+      "source": "경기일보",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "시흥시, 청소년·청년과 함께 인공지능(AI) 시대 정책 방향 그려",
+      "full_title": "시흥시, 청소년·청년과 함께 인공지능(AI) 시대 정책 방향 그려 - 연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fNGUxbERGSkVVRGp2aXkwMDdVTUhGcF9ocWZJMUlwMjYxQW9pLW5oSmRIdnRWdEIxczdYOTFfcjFCTEpWREFOZ2VMR2dnc2s1WVZrZ0RuMnZwYnM?oc=5",
       "source": "연합뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "하나투어, 카카오톡 챗GPT 연동 AI 여행 서비스 확대",
+      "full_title": "하나투어, 카카오톡 챗GPT 연동 AI 여행 서비스 확대 - 라이센스뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zVkphSkxPWjZYemZqcFhxM0l0ZzllTkFVQ1pjeHdLTFlaaGZsdmRtalRyN3ptZWotWkdLZjJLUkx5cm9ueGF3Y01IcGlIRUtWTlUtRnJQRzNBSXFDaDAwYkJKQkRBamV5cWFj?oc=5",
+      "source": "라이센스뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "안양시 '인공지능 정책 자문단' 출범...AI 선도 도시 도약 시동",
+      "full_title": "안양시 '인공지능 정책 자문단' 출범...AI 선도 도시 도약 시동 - 뉴스핌",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfSFB5SFI1dnNGYXJtRklXck81R0R5TXMwY0hHZlp1V0pRdzdCT240VlV5QjJObkEyRUhPUHBUdG1sOVBWdEhyV2txR0ZON0M5a090eTZmR2Z0ZGRI?oc=5",
+      "source": "뉴스핌",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "진도군농업기술센터, ‘인공지능(AI) 활용 진도 대표 디저트 제품’...사업화 가능성 인정",
+      "full_title": "진도군농업기술센터, ‘인공지능(AI) 활용 진도 대표 디저트 제품’...사업화 가능성 인정 - 메트로신문",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ldkpYYlJHTmJnRXY5R0I5UEFBTkFBX1RIMW12M01Fc2lQY2NFM2IwcXdoQjhHSmZkdjFPUU1aTXRfTkgyX1R4N2NkUHN5MkNDSmtDMTZBVGRHSXItOTBlLQ?oc=5",
+      "source": "메트로신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "아시아뉴스 후지쯔가 글로벌 인공지능(AI) 반도체 선두 주자인 미국 엔비디아의 기술을 도입해 대대적인 AI 로봇 공학 혁신에 나서",
+      "full_title": "아시아뉴스 후지쯔가 글로벌 인공지능(AI) 반도체 선두 주자인 미국 엔비디아의 기술을 도입해 대대적인 AI 로봇 공학 혁신에 나서 - 뉴스케이",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1vWXJvak9TTXQ4Nkdwdmx6RzdhR2xQeEZXRlpOdkdIaFotYWJmLUwwYkktSzViejRxSGQ5NGdPcFJ6dmVyX0VGdjBaU0NyN2JwMW5EdHhXd19wQQ?oc=5",
+      "source": "뉴스케이",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "태재대, AI·미래전략대학원 9월 출범…“AI 기술 넘어 미래설계 교육”",
+      "full_title": "태재대, AI·미래전략대학원 9월 출범…“AI 기술 넘어 미래설계 교육” - 미주중앙일보",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9HbkkzX3JzbUcxdGc0V2lmd2lCd0h3b0pVTXhyX05WOFJLQUY4WmlPZEFySElvRm1zNUFaa1lqenZUTzc4SXdteUN1bVVuN3RTZFRyZklFRXpXV2ZQZ0ZpN0dR?oc=5",
+      "source": "미주중앙일보",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 디지털·AI 기술로 대정비작업 '완전 혁신'",
+      "full_title": "GS칼텍스, 디지털·AI 기술로 대정비작업 '완전 혁신' - 뉴스락",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4c01WTGY5QU5PclV5MWM3Nmp2VE9mZnd2SF9IcXNieHdpb01PRW5US1dTWU5WZ2stQ3ZaNkZKR3VGSFpHTGFKb3hkbjBWYkMxQmVhMnJEbk9yOEpoYW1scUlPc1FsZHBxRlJCRw?oc=5",
+      "source": "뉴스락",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "시진핑, 카자흐스탄에 AI 기술 공유 제안…AI 외교 확대",
+      "full_title": "시진핑, 카자흐스탄에 AI 기술 공유 제안…AI 외교 확대 - 아주경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42WWtGV01ZeXNkWWVPQ013Y3BTYzZ5TXB5eXVyMHd2RzNhMVZBdWtjMGU2ZVp3U1RxVnM5QkdJWjItdi1LVzdaRUVyMmlyQXVMeDIzbHVGZk5SUdIBWEFVX3lxTFAyNFBDNGpWX2x2RVc3dktRd083VThocUVmemN6SGdZNWREQVRENGl5Y19iODFRQmV4Tmp4Yk5kMi1DYUdLMGNVZEFlaDVTU05SMmlFVFI0dkc?oc=5",
+      "source": "아주경제",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "배경훈 \"AI 기술패권 총력전…대체 불가 대한민국 만들 것\"",
+      "full_title": "배경훈 \"AI 기술패권 총력전…대체 불가 대한민국 만들 것\" - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wejhxNkJUaTFpUE05ajh2enJrSG1FRzlYdG5GUk1rTDljZmg3NEF6UVJfVGpYdE11cDZhWWk2ZEJfT25JVjJUMVViNEFXMkkxbnNNNkxIVFJwbGlaNmMtQXNmSlA1MFRYTjhPb3doWms?oc=5",
+      "source": "연합인포맥스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "메가존, 테솔로와 MOU 체결…피지컬 AI 기술 협력 및 인재 양성",
+      "full_title": "메가존, 테솔로와 MOU 체결…피지컬 AI 기술 협력 및 인재 양성 - 전자신문",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zNDg1WF9obUt0T1hKX1pXMENpRGY3anNMQkFCQWhBNF9HM05xbFVPeUR4b01QZzhJdlVfbFlwc1ZfNUh3MzZfTWphRmVvdw?oc=5",
+      "source": "전자신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "KTL, ‘동남권 AI 융합기술 재직자 교육’ 개최…“첫 통합 재직자 교육”",
+      "full_title": "KTL, ‘동남권 AI 융합기술 재직자 교육’ 개최…“첫 통합 재직자 교육” - 부산일보",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9TejJjMlg5UUtvZmpxRkhRZEdDZFpBbEZsRTlRV2N3ZmhRcEF5bWx2NzR2andmYWZSQUI2TU5CWW1LS2ZlZU5NQ0s2TUJiSlZpNlc2aGF5MGZFTUF3WGpqV0w5OUhjSzN0OWRPWXhBOXpLcTd2?oc=5",
+      "source": "부산일보",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "글로벌 제약사들 루닛 인공지능 이용한다...타깃치료제 속도",
+      "full_title": "글로벌 제약사들 루닛 인공지능 이용한다...타깃치료제 속도 - 메디칼타임즈",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBGOVZvM1Z5UndVa3k1N0cxd05GdUJxUENkVkxCSWJWT0NNT0Y3VGV5Z1FyNFNtMjdBMkNQVEQ0b2RHTWtmQnN3R2xDa0VKX2JRRy1XMHdnbDJFcE5SS0ZMaXFwVHVmYTFobFd1QjRZR0hSdjA?oc=5",
+      "source": "메디칼타임즈",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, AI 기술 활용 ‘대정비작업’…“효율성·안전성 향상”",
+      "full_title": "GS칼텍스, AI 기술 활용 ‘대정비작업’…“효율성·안전성 향상” - 부산일보",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9MNVFTNXBoMUpEd2Zhem40dXlNdWZoanhqcThWZnhZZzZ5dHBRdjk3Wms2X3R5cXJVUjlVNnI3OXJzRTRIUWxnVHVpcG50N1ZyQnNoVm8tT19Pd3piX3h5a21fRG5NcHZlMFdZc0R5LXZyVWhO?oc=5",
+      "source": "부산일보",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "中, 美 맞설 AI 국제기구 공식 출범…29개국 참여",
+      "full_title": "中, 美 맞설 AI 국제기구 공식 출범…29개국 참여 - 데일리안",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOX1VCd092M29ZSG52NVkzR3lYWXlROHF2ZExUQkxVV3NIa2F6TU53TFFBdjhqNU5CZ0wyNWVqMU54NjFBVTJuQkRuemtUSVhaZmxPQUZ0RnlHVVlHbXBjN2QxTGdtb2NmRkNZVTJESVR2MjdWZDNoQ0wtQ3g1RWxpcURPc0ZpSWxLcWxnY1NCRjJVRy1CRkMwZldGS1JWWGRYc1hmZHFpWmFBVkRpckNMRW9PUDk1SGREQU9VT2J2b0tPdUhlc3QwWk80a0c2b3ZmN21JYjNFczg0NHVxNGNreU5rdlMxZTNSSHQyQ0Njd2h1a3ZDQTdlRA?oc=5",
+      "source": "데일리안",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "포항시, AI로 북극항로 연다…미래 해양산업 선점 시동",
+      "full_title": "포항시, AI로 북극항로 연다…미래 해양산업 선점 시동 - 경북신문",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Xc2xsTXZOaGtPY19BelNWMlVCQjZCTTFOQnFTNHhybmpZWkVrSk9uODhvRGtaM2lPREhFMlQyNDlSRmhPaEEzWElQNE91eHhCQ0tZcGdrOWU?oc=5",
+      "source": "경북신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "원자력병원, AI 기반 3.0T MRI 도입 外",
+      "full_title": "원자력병원, AI 기반 3.0T MRI 도입 外 - 의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1lcjdJTUY3T1QteF8tSWp4OFBhenAyWllfdWM0ZTJXTzJYV1cycmI5c19TNzFPSUVHbnZnd0Ita0I4bDhjcTQxdjItZjlPNmE1Y0ZVT2FWZDRuVXBCaTJuaUZFdWFWTHM?oc=5",
+      "source": "의약뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "AI 일상화 신뢰는 아직... AI시대 소비자 최대 불안은 ‘책임 없는 AI'",
+      "full_title": "AI 일상화 신뢰는 아직... AI시대 소비자 최대 불안은 ‘책임 없는 AI' - 인공지능신문",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9uV2tjeUNFT1Z6TlI1THRxRnRpVWdMVUEtZUhrbmhvT1FHM1lVSm5yQjRPazRtbnJwdUtLQ293akF0Z01BTTRPVmRlYmxFWk5QNnJEdUVBSnpLa3VFSDBPNzRtMVhWb0U?oc=5",
+      "source": "인공지능신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "시진핑, \"2035년 세계 과학기술 강국 달성\" 재천명…中 AI·반도체 굴기 전략 재확인",
+      "full_title": "시진핑, \"2035년 세계 과학기술 강국 달성\" 재천명…中 AI·반도체 굴기 전략 재확인 - 인공지능신문",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHV0tXTG82bnU1Q1luRERxR3FCZUlzTlY5U19jdVpJT2F3eUU5MVVhbU9PQTM1VXhMZDFxVGdXTThSbFZZcFVLbHRvcEdCVmhjY2dMWTBUR01mVDdrd0p1ZUU1N1lWVVE?oc=5",
+      "source": "인공지능신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "\"AI시대 국가기술자격, 실제 직무역량 중심으로 전환해야\"",
+      "full_title": "\"AI시대 국가기술자격, 실제 직무역량 중심으로 전환해야\" - 연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnVUtubEZTZVlsSEdRNzJ0TFBFWGFiMTNpYlZwdk02bzlaUVhWbUtudnhUR2hFajlkQkxOYUhJaDkwUkNhV2VUZzhKQ3pIbFYwYVJvOUtIMWRiVDAtUEdqNdIBYEFVX3lxTFBnVUtubEZTZVlsSEdRNzJ0TFBFWGFiMTNpYlZwdk02bzlaUVhWbUtudnhUR2hFajlkQkxOYUhJaDkwUkNhV2VUZzhKQ3pIbFYwYVJvOUtIMWRiVDAtUEdqNQ?oc=5",
+      "source": "연합뉴스",
+      "pub_date": "2026-07-15",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "AI 기술 활용해 에너지·사회 문제 해결…SK이노베이션, 청년 창업팀 10곳 키운다",
+      "full_title": "AI 기술 활용해 에너지·사회 문제 해결…SK이노베이션, 청년 창업팀 10곳 키운다 - v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RcXdtSllBSjdtcExTbWFpMXZCZVY2bE5TS3pCSXp3cjhtaDE1SGNFWTIwSmFhenF6MFRFTFNnNzZfalF6eXBsRHlCemNEM1E?oc=5",
+      "source": "v.daum.net",
+      "pub_date": "2026-07-14",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "백남준 예술철학과 AI 기술의 만남…'DMAF 2026' 서울 도심서 개최",
+      "full_title": "백남준 예술철학과 AI 기술의 만남…'DMAF 2026' 서울 도심서 개최 - 뷰어스",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54QWhhWTVqNXNVUlNteHFvS2JqMHlCWGdNcUZuYm1zSU56eEpQUkEyVXRGbUNsQ3d2SlZUeGdlV1lWZGR4SS1JR3NJN0lCNUJ4eGY0Vm1kQnQ?oc=5",
+      "source": "뷰어스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "정부는 인공지능(AI)을 적용하는 기업에 최대 30억 VND의 자금을 지원할 예정입니다.",
+      "full_title": "정부는 인공지능(AI)을 적용하는 기업에 최대 30억 VND의 자금을 지원할 예정입니다. - Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNmtNT0YyNjltWU5kQ0tnRmpnbkRDQlZuOGMyTllTemludU54SXF0b3AyalpzSUY1VTdLbmFDV3RZVHlKYXhiX0dNeGx3SElZYnc4cmR4YkZ1Zkx5OWRVcWZSRm1xYjhRWVozYnNXTk9NeklDWDVvaTgwUnlnamR3TkdWUjVYaW85bmlQZUZXYTZmUQ?oc=5",
+      "source": "Vietnam.vn",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "현대로템, 피지컬AI 기반의 철도차량 자율주행 기술 고도화",
+      "full_title": "현대로템, 피지컬AI 기반의 철도차량 자율주행 기술 고도화 - 인공지능신문",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTb0RFQTFzcXpKMTJpeHdtYk5rbkFmdTY5QmdQenFuczl1eUFHXzdQZVNxdnpVUV9iRU9CSWJxdENNSUJkaF9NUDZJSDNDU2lOcDVNQjdjN3kxbDZqQm1ESm11c0xoa3M?oc=5",
+      "source": "인공지능신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "2026 김포 독서대전 ＜미래를 보는 눈＞ 인공지능（AI） 명사특강 임창환 교수 강연",
+      "full_title": "2026 김포 독서대전 ＜미래를 보는 눈＞ 인공지능（AI） 명사특강 임창환 교수 강연 - 경기평화신문",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1EMFYtSEJWNVg4dGkzMWNOS01fTUlWTjRjb3RLbmJ3Z1RDWXVQWTZaVzFvREUydWJaTU94bWRaWWpZQ2k1ZXBfTTZB?oc=5",
+      "source": "경기평화신문",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "\"AI·로봇이 농업을 바꾼다\"... 'AFPRO 2026' 개최",
+      "full_title": "\"AI·로봇이 농업을 바꾼다\"... 'AFPRO 2026' 개최 - 시사뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5CbHhhZ0NHWTEtRmJLWVVJZk5wbVRHbllrM3JsZndreGxBWWlUX2tINms5SHRUX3hvM2cxTGg1Y0ItUTg5aDhaUmJHTWZab3hJc0JaQWRWRklicEprX1h6eTJLZw?oc=5",
+      "source": "시사뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "인공지능(AI) 기술이 타이응우옌성에서 재배되는 차의 품질을 향상시키고 있습니다.",
+      "full_title": "인공지능(AI) 기술이 타이응우옌성에서 재배되는 차의 품질을 향상시키고 있습니다. - Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcUl4enFWNGh1VDNBVm9NVjBkWmRfQ3VWYjY3OVFCREwyZUd2QTRBUjhKdVFhSUItWk16Y1ExLVZma25jMzVMb2lCR2xGYUo2ZGxRdFBSZERyY2VGVlg4YjFvdUNYb0NuV0RnYTVNemloZThXcjVPcl91N19lZDNMWjNDX24?oc=5",
+      "source": "Vietnam.vn",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 완료",
+      "full_title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 완료 - v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9aZzV1YklQSVpaU3lWY1ZHdlo3NnJIUnI5X3BtMEV2cVdzV2Ntdm1HQUstaXVwQndfZFU0c2JZbTNkMzJ0dlJmQXBCTzE0TjA?oc=5",
+      "source": "v.daum.net",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "대구 수성구, 미래 경쟁력 전략 제시",
+      "full_title": "대구 수성구, 미래 경쟁력 전략 제시 - 프레시안",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOcmpuVE5KUl90ZzRVZ1VzSmhWZHhWZ1NyRUZCMS05cDVSR1d3dHdIS1l1UzNXTldtSTJBWkxva24yYXdxQ2x3ZU0ybVBhSHhEQlpQTENRRFJIaVJhRDdleU4yTUJ1TFJhRFgw?oc=5",
+      "source": "프레시안",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 디지털·AI 기술 활용해 상반기 대정비작업 성공리 마무리",
+      "full_title": "GS칼텍스, 디지털·AI 기술 활용해 상반기 대정비작업 성공리 마무리 - 파이낸셜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9adHRYQk1odjhOMDhfTVVhc1B0eW9GWXgwZmFxd19MT1hkOXBYSmFWc01Bc21nQzhGaWhkekF5U2lZV1k5Zk5xaXNFbmdCd0J0bEU3NTFHZDRQUQ?oc=5",
+      "source": "파이낸셜뉴스",
+      "pub_date": "2026-07-15",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "루닛, 다국적 8개사 참여 '신약 개발 AI 컨소시엄' 합류",
+      "full_title": "루닛, 다국적 8개사 참여 '신약 개발 AI 컨소시엄' 합류 - 팜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5vam1Fd01rNzYwUGY5QWw5Q3FTekdTUFlsRFVpYTZRblYxT284WnVIaXpLVEtLbHlQajBKbEtDY01KQ2xBYVNVaUM4MzFlMjR6M2JpdzB5OTkwUlFvRXN4QWxjbFd3TmxtR04taQ?oc=5",
+      "source": "팜뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "LG전자, 퓨리케어 얼음정수기 신제품 출시…AI 기술 적용",
+      "full_title": "LG전자, 퓨리케어 얼음정수기 신제품 출시…AI 기술 적용 - 헤럴드경제",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE41cDVRT3ZlTW9sTGVXZU1iR2xsVkNyN2Jhc3p1WmRtSVZNVjNiSzlQYW5LbFh0RDdiZmFaZFFPUnlNYXZzenVfRWUtenNpSThVN1VNZnl3?oc=5",
+      "source": "헤럴드경제",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 완료…2000억 투입",
+      "full_title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 완료…2000억 투입 - 뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kSU9VcDh5QzlhSGJkd3J3bnZ6MEJneGJZVFdOdnNkbm80LXdLT1hXZUY2aWlrak4xZDlmZlVXdlNCZnlhNV9OUTFoZDZTWjRnUlozLWNFcXpXNDRzcnpsMFhBY2I?oc=5",
+      "source": "뉴스1",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
@@ -60,35 +372,51 @@
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "시흥시, 청소년·청년과 함께 인공지능(AI) 시대 정책 방향 그려",
-      "full_title": "시흥시, 청소년·청년과 함께 인공지능(AI) 시대 정책 방향 그려 - 오토투데이",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14Q1hHNHdFLWpmTlRYSjltUF9WcTQ3SW5peTBDTm5EcHhpNVVnYTc2LWxKUEp3bUx0cjBMNjMxd2dsZ2gtenlpS0xIZU9mSTBhMThLblJ5djk4MS0tYWtLQlNxM2Z1aU9Ub0dIa2xrMA?oc=5",
-      "source": "오토투데이",
+      "title": "AI 시대 속 청년들은 정말 행복할까? 임병택 시흥시장이 답한 ‘지역사회의 진짜 역할’",
+      "full_title": "AI 시대 속 청년들은 정말 행복할까? 임병택 시흥시장이 답한 ‘지역사회의 진짜 역할’ - 경기일보",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXRmwxMFlZQ2xzWG5ZWEd6VnczZ1J0VmVPdTNRdVpFMnVodlNFcnhQNndDbzkxWElxclk4ZEJDdTNFbHF6bk85Sm1fN2syQ1d3dTZUZkVUc3hPLVE?oc=5",
+      "source": "경기일보",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "“아날로그 제조에서 AI 기반 디지털 혁신으로”…KTDI, 첨단소재산업의 미래를 설계한다",
-      "full_title": "“아날로그 제조에서 AI 기반 디지털 혁신으로”…KTDI, 첨단소재산업의 미래를 설계한다 - 전자신문",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5iT2N2VHo5VlNDLUQ2bExKTmVDZlp1OGp3RmsweEZWZlU5My1wLUgzMkNLMnptZVpLYVhLNTU5MENQWmQxeU1faXlwZHpudw?oc=5",
-      "source": "전자신문",
+      "title": "“AI는 일자리 소멸 아닌 ‘직무 재편’…중소기업·청년층 맞춤형 연착륙 지원해야”",
+      "full_title": "“AI는 일자리 소멸 아닌 ‘직무 재편’…중소기업·청년층 맞춤형 연착륙 지원해야” - 경기일보",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xVW9IcmNfYXRjdDB0ZGJ0Sk9lai1jZHlraHZXWXF2WWY5dmo4SW81TFdMV0QzcUZucnBBV3gwNGFxbHBick5yNS00WUFJZ1o1d0hVVHBSMGhVZUU?oc=5",
+      "source": "경기일보",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "시흥시 지역사회보장협의체, ‘인공지능(AI)과 통합돌봄시대’ 동 복지아카데미로 변화 대응 역량 강화",
+      "full_title": "시흥시 지역사회보장협의체, ‘인공지능(AI)과 통합돌봄시대’ 동 복지아카데미로 변화 대응 역량 강화 - 시흥타임즈",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PQWV2My04U0dyeF9lcUJjVC11Y0ZYWjdoUEFTUVNIRk02RnNsSmpVWVN5UVZSZE9xUVZYM205MDJYbzlocFpJdzk0bW9qdjFRbW5Jei1PcW15RHIteFE?oc=5",
+      "source": "시흥타임즈",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "GS칼텍스, 여수공장 대정비작업에 디지털·AI 기술 도입",
+      "full_title": "GS칼텍스, 여수공장 대정비작업에 디지털·AI 기술 도입 - 베타뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4eXFtcEhHM0dYTXlIYlY1TlNfUHQ0VEVPWktXY25vamRUZ29oYm1aOEdXZDJjSlF6d1I2bVJYVEdwQW1kX0x3S3BWNEY2U2tOMDRZTW1rWFpzOWlXNGgydmN0QWw?oc=5",
+      "source": "베타뉴스",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "경기도일자리재단, AI시대 일자리정책으로 ‘직무 전환 훈련’ 중심 패키지 제안",
+      "full_title": "경기도일자리재단, AI시대 일자리정책으로 ‘직무 전환 훈련’ 중심 패키지 제안 - 경기도뉴스포털",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWGQ0YzVmTTcwSmZ4Y0Q3Uzg0ZnV5UmhKZkFCejk3ZFpjRDAwODlTTGJWZ2J3MGIyMHlWcHJZdVlUU3otNXR0RGlVWkhCdUhqQVBlT1J0WjQzbWR4aGpHRnZLOThCcHRVaDVDTlZEVmRBcmpVQ2RLVTBOTVZDcjNJcFR3TGM?oc=5",
+      "source": "경기도뉴스포털",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "한수원, 인공지능 스타트업 육성 거점 ‘KHNP AI누리’ 개소",
-      "full_title": "한수원, 인공지능 스타트업 육성 거점 ‘KHNP AI누리’ 개소 - 전기저널",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE80OEVGVDM5TmFsRFdUVkVJWjNZdmttV3RoNmZNRFRLSWIxYmtibGVtQlFLLVlOakNtbWJIcGxjekd1M2VJNm9MbThzdE14S0tBU1JuU3ZTajJJN3ZsbnlmRlF3?oc=5",
-      "source": "전기저널",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI 기술이 지키는 깨끗한 물, 새로운 물환경 관리의 시작[정책발언대]",
-      "full_title": "AI 기술이 지키는 깨끗한 물, 새로운 물환경 관리의 시작[정책발언대] - 이투데이",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBWOTdpdXE4U0d6TzRRdmNDLTVPalgwVEI4eVpVa2E4SUp1Y25KTy00VTh0NEpxWUFGYkNESUI2clBqajk2N1J2cy02bEN2UFkwRzNSWA?oc=5",
-      "source": "이투데이",
-      "pub_date": "2026-07-15",
+      "title": "국제성모병원, 印尼 종합병원과 손잡고 AI 의료 실증 파악",
+      "full_title": "국제성모병원, 印尼 종합병원과 손잡고 AI 의료 실증 파악 - 파이낸셜포스트",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YU2Q2REpJbWl4Mkw1cGV3WVJEN2czT21RWmcwdjRuN3A2X3ZEaV83Wk5fbzJidXFDNV9HY01BRUxQZVhLSXVOY2M0T3dhM0cydHlqbkVMWk0zckFHaVlLN1VlQUlhUkhUZEo1dlhFLTN2T2Ny?oc=5",
+      "source": "파이낸셜포스트",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
@@ -100,171 +428,91 @@
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "코레일유통, AI 플랫폼 'AX 플레이그라운드' 도입",
-      "full_title": "코레일유통, AI 플랫폼 'AX 플레이그라운드' 도입 - 비즈월드",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82YXJCbkR2TlNQSjZlUHVnazNjRlFNamhuQ3VIMFdFWkxEQUtMN0U4OTJDa1lwUENlWDhwZDU1blNxNmRPc0dOTDZJbTg2UmdTbWIzZmdYNldqUEc4ajFFaHBrZm5LUTdoTHc?oc=5",
-      "source": "비즈월드",
-      "pub_date": "2026-07-15",
+      "title": "[경제] 호주 AI 전문가 \"中 AI 발전, 세계 과학기술 성과 공유에 기여\"",
+      "full_title": "[경제] 호주 AI 전문가 \"中 AI 발전, 세계 과학기술 성과 공유에 기여\" - 내외뉴스통신",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA1SGRWNHlzMnNTbVlWak9NYW9ENVlETkFsVjBZY29QVHFjVFlJdmRMQUxrb0pIanRBQTE5TGxhamFsOU9BZEh1cGRXYXZaQlBodkYzYy0xbjNzZzBNQkExTk43MjFYa3poQloxMw?oc=5",
+      "source": "내외뉴스통신",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "애플, ‘초경량 AI’ 기술 검토… 시리 온디바이스 전환 속도 내나 - 조선비즈",
-      "full_title": "애플, ‘초경량 AI’ 기술 검토… 시리 온디바이스 전환 속도 내나 - 조선비즈 - Chosunbiz",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaVlRX3U3TmpjNUI2b3BYLVh4ODdsMEoyNWNpM19NT0tiM3BaU1FHa0ZJRnhUOWhKSDFmeVQxWFhUbUp4azRrcjBBZzdEbFdiNm84R0JVOW80eXJHa3YzaEVXc1IteXhMdy03SGFzbVZQaGVxcWI4YUhtVVZ1ek0weXRR0gGWAUFVX3lxTE1XNi1kNmh5a1NBMW9ac3daVXphbGZ3VTBJVkZjMnVVeFlNM2RnYWRaVTg5aWF0TTBBdWN6SWdTRFkwRnZzdmI1SU4yTzZmV201blhrM0Ywa201RVlIUFo5bmtORy1LNDlhWXczVUdQeUZPdUxFQy1hbTE4U2FYcTE1THlkei1ETkJ6U1QtVm9uXzMtUjZWdw?oc=5",
-      "source": "Chosunbiz",
-      "pub_date": "2026-07-15",
+      "title": "GS칼텍스, 디지털·AI 기술 활용 대정비작업 완료",
+      "full_title": "GS칼텍스, 디지털·AI 기술 활용 대정비작업 완료 - 뉴스웰",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9MWVdRa0h6LUpiUGFMYUNDXzNJRzA0RE0xRXRMeGQ4MGlJWnVjVlZOczBmYk52b3BvQ0Q3QmRZZWllM0hzNHRaSXhjT0FicmE4am1KWW16LVVscko1eUE3Q1dnX0lWTEtsM1dUaw?oc=5",
+      "source": "뉴스웰",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "고용노동부, \"인공지능(AI) 기술혁신에 발맞춘 새로운 사회 혁신의 길\"을 모색한다",
-      "full_title": "고용노동부, \"인공지능(AI) 기술혁신에 발맞춘 새로운 사회 혁신의 길\"을 모색한다 - 와이뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OVmZKTXpZbTZOTzdLYmJ5YWNEZ3RKSUVmNUx2R2I0YVQxa2hCNVNDQnRzakZCdVhmRnBYaXotbnVJYlk4elVQcEpGckV0bDZyY1FnOVVIZFBpcFNDYWc?oc=5",
-      "source": "와이뉴스",
-      "pub_date": "2026-07-14",
+      "title": "디지털 기술로 재난 골든타임 잡는 경북의 스마트 안전 방패 > 뉴스",
+      "full_title": "디지털 기술로 재난 골든타임 잡는 경북의 스마트 안전 방패 > 뉴스 - 더코리아",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBWRzd1MTZNZWluU1d1OHpQZVZJcTVMZEF2WWlpLXdvR2ZKS2UySUNjcWFxRDhicXJjSmFCcDF3TERiMDl0UXlwcmtyYXlGeGV6Wl9ONlEyN2U4MEpFMmJXNFRpWGJfSnJ3MjZicWJtaDc?oc=5",
+      "source": "더코리아",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "영인에너지솔루션-V2E, 계통연계·AI 기술융합으로 ‘재생E 100GW’ 시대 공략",
-      "full_title": "영인에너지솔루션-V2E, 계통연계·AI 기술융합으로 ‘재생E 100GW’ 시대 공략 - 전기신문",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zMHpfQWFYdTRFSTZVcWItVjNvS2ZFLW9CQjE1MnNyNWVPZ1VJXzN2YUZMMmdNbERUTmU2eUJSb1NHM084VmNrXy10WnpUUEVlaXNnOVFwVjZhZDc5SlFueFJIdlQwV040bkhjcdIBcEFVX3lxTE1LQk1zVnF4cmg3c282XzRiakF1ODVUVlVNT3lScFFFc0xUdGVLM0RiMVZoSm5KX0tXdDlhVGhONVNXSWhsUkx6YXlKT0pGVVBRZHRkdkdaVjZiSVotd2ZSb0pUcWs1QXZaVF9Lc1N3Ynk?oc=5",
+      "title": "현대로템, AI 기반 철도차량 자율주행 기술 개발 완료…글로벌 시장 선점 나선다",
+      "full_title": "현대로템, AI 기반 철도차량 자율주행 기술 개발 완료…글로벌 시장 선점 나선다 - 전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYMkZOY09yVDY3VER5WlNiRXdMWWRtS3Z1WlBWUTNteW9zeUs0YUN0MldwN1JreEhOMDEySHhqaWFWVUFkS0ZtdDN3cG91dUFHV29CcldiaTNwVUItbGdHZmxvdjBBaWk1WDhKYtIBcEFVX3lxTE04d0VVaEhkTlBNSE9McnNWczNxSFkyTDh6RnpzZkdTYVRPOUprVTF0b1hKS3oyZ2ZkZVM4S3dPalNfakpfTGszN2V2ZDVoWWEyeDB2SFVXSGFkV2VPRXhQbVpEYWQ1Mk5SQmdwNDNUSzk?oc=5",
       "source": "전기신문",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "SK이노베이션, AI 청년 창업팀 10곳 육성…에너지·환경 솔루션 발굴",
-      "full_title": "SK이노베이션, AI 청년 창업팀 10곳 육성…에너지·환경 솔루션 발굴 - CEO스코어데일리",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hQ3BiVlZVNzY1UmxzVHNVUkM2MFVqc0tydkRqNWY5cGVvMGctcmM0dko5MVhoOUpWeXIzYzhVU3BZLVhVdFZlTmV0c3V0eUl0TjZQMjdBbElVWXE1Zm5DRDJLY1lSTFQzQjRN?oc=5",
-      "source": "CEO스코어데일리",
+      "title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 성공적 마무리",
+      "full_title": "GS칼텍스, 디지털·AI 기술 활용해 대정비작업 성공적 마무리 - 네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZRmppYjdaQm1tOU02by03Q3NtSGNmNmpFR3g4eVN6dWRwNGlUWlM0UE5acm9ObFhMYThFUjBFUXR2Y2JuVGh2bDdNM2tEVm9nZFc0?oc=5",
+      "source": "네이트",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "경기도일자리재단, AI 시대 일자리 사라지기보다 바뀐다…\"직무전환 정책 필요\"",
+      "full_title": "경기도일자리재단, AI 시대 일자리 사라지기보다 바뀐다…\"직무전환 정책 필요\" - 네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qUklEZDJNbHJTam40NjBoSHpEOUZ5RlRmd25icnFoUHBqWDk3N3RTMFNXWk96WVdxSEdpSTJaMjd6UHg1TlFlVmFJd0UzVXBqZnJj?oc=5",
+      "source": "네이트",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "AI 기술이 지키는 깨끗한 물, 새로운 물환경 관리의 시작[정책발언대]",
+      "full_title": "AI 기술이 지키는 깨끗한 물, 새로운 물환경 관리의 시작[정책발언대] - 이투데이",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBWOTdpdXE4U0d6TzRRdmNDLTVPalgwVEI4eVpVa2E4SUp1Y25KTy00VTh0NEpxWUFGYkNESUI2clBqajk2N1J2cy02bEN2UFkwRzNSWA?oc=5",
+      "source": "이투데이",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "[사설] “AI 전환 대비, 지금 행동을” 석학들 목소리 귀 기울여야",
-      "full_title": "[사설] “AI 전환 대비, 지금 행동을” 석학들 목소리 귀 기울여야 - 한겨레",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNWC1QeURVOHBMYjd1dW9KYi1SMGoxTUpodUFMOE04YlN6c2llNGZ1b2dCM0RwYlNUeDlDcEtwQ25PYndTS2NzaHpkNkgxMmlaUGZMUWNjR0RuLTFCbW1QdmxqelRlUHUyN2c?oc=5",
-      "source": "한겨레",
+      "title": "메가존, 테솔로와 피지컬 AI 교육·기술 협력",
+      "full_title": "메가존, 테솔로와 피지컬 AI 교육·기술 협력 - 네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5vbDh0Yy10aWhwQ2tpellfaHVtTWVFOGlsUUVzS040OGRCUXFsNGNRdmh4WkZwVHRYMkVkV0MzQ0dZTDI5SUVIVGcxb0VLMV9Gejdz?oc=5",
+      "source": "네이트",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "씨이랩, ICML서 온디바이스 비전 AI 기술 발표",
+      "full_title": "씨이랩, ICML서 온디바이스 비전 AI 기술 발표 - 뉴시스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UYi0tU2VibXlJUmJwTzFYVkhiek9ZOVJyQjJ4ZzBWMk90eERRRVJlY3d4cTJEOE1VNWFKaW9NMWpoRE1wQ1BqX2VzSE80bkFqY1hkV1VabkZjcTE0X01tZtIBeEFVX3lxTFB3blhWRGlMVVZqUktGX2k4a0xmcFlMZEEtdmttMDlRa0xwV2l3bjRwbXZYT09vcV95SEhLb3ljMEd2UDFHM0dDVjFmZjl2TE05MkVhc1NEa3hXdEJvWXQ2ZS10TExQbG5mYUtQYldsbnFYS3ZtajRCbg?oc=5",
+      "source": "뉴시스",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "전문가들은 인공지능을 숙달하기 위한 3가지 핵심 기술을 꼽습니다.",
-      "full_title": "전문가들은 인공지능을 숙달하기 위한 3가지 핵심 기술을 꼽습니다. - Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUZXcllzSDlHaTI0d3Q3RVFBTjlpNUdKenhUdzhBSWJPYkN5bldNZlYzYjU4NTBiRlVja1Vnb09NaXpVS0NOWDFDcjFwcGdPeDR6Q0JoMm50MThfLThfSTRzNHhlUXRnN0gtem5iUi1rMDNjREtyZUZpU05EbUxnUg?oc=5",
-      "source": "Vietnam.vn",
+      "title": "GS칼텍스, 여수 공장 대정비작업 완료…디지털·AI 기술 활용",
+      "full_title": "GS칼텍스, 여수 공장 대정비작업 완료…디지털·AI 기술 활용 - edaily.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRnNDT0RoeWZtd25HZmZMVkhnSUNiM0FCU1pta2tnT2RFM1ljR0hfZG9GXzBPUGUyV21jTENYcUZYSmdrMDBxRV9wcGI3WFZCN1BFVWhFcVh0Vkp3QlFaLUJtUlFzeEp6S1lfemRSaWtzbW1RbG5CbjJ0akdyVllIWA?oc=5",
+      "source": "edaily.co.kr",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "\"AI시대 국가기술자격, 실제 직무역량 중심으로 전환해야\"",
-      "full_title": "\"AI시대 국가기술자격, 실제 직무역량 중심으로 전환해야\" - 연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnVUtubEZTZVlsSEdRNzJ0TFBFWGFiMTNpYlZwdk02bzlaUVhWbUtudnhUR2hFajlkQkxOYUhJaDkwUkNhV2VUZzhKQ3pIbFYwYVJvOUtIMWRiVDAtUEdqNdIBYEFVX3lxTFBnVUtubEZTZVlsSEdRNzJ0TFBFWGFiMTNpYlZwdk02bzlaUVhWbUtudnhUR2hFajlkQkxOYUhJaDkwUkNhV2VUZzhKQ3pIbFYwYVJvOUtIMWRiVDAtUEdqNQ?oc=5",
-      "source": "연합뉴스",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "ETRI 개발 ’AI 기반 주파수 예측기술’ 국제표준으로 인정",
-      "full_title": "ETRI 개발 ’AI 기반 주파수 예측기술’ 국제표준으로 인정 - 연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93ODBsblR6VjI2VG4xcUhsaFFmclFNaEhuVml6RWdEd1pxYkRyUThVallVS0VHa0FQNl8yOEVFYmg4aUJkd1ZzTDdmNWNsUVFRSzE4bHZob2lPRURtMnVJbGx5RWxkb28?oc=5",
-      "source": "연합뉴스TV",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“경북 곳곳, AI 미래산업부터 문화·관광·도시혁신까지 지역 경쟁력 강화 박차”",
-      "full_title": "“경북 곳곳, AI 미래산업부터 문화·관광·도시혁신까지 지역 경쟁력 강화 박차” - 에너지경제신문",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBldEZfdGtRWFFvLXlFbUZ1NnZoMXNqSVZlSTdhcTdUQ3Y1dVFYeDlNbFdyS09INkVBaVF1NjBWVVY5SGhuSzdhNE1UNmhEWWoxZ1dFa281ZTdRTkU?oc=5",
-      "source": "에너지경제신문",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“AI 시대 국가기술자격 제도, 실제 직무역량 강화 중심으로 개편돼야”",
-      "full_title": "“AI 시대 국가기술자격 제도, 실제 직무역량 강화 중심으로 개편돼야” - 브릿지경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ITXRsYXVfUjZpY0ZMdGk3bmhBZ05GSTJtNXlvd0F1SlhUY1pOLWxhd20tZXVQNWZGcU8wcUlCRzB2aUVjTXRfeWEtR1gzZjZiNFJOTjBINTFadw?oc=5",
-      "source": "브릿지경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "크라우드웍스, 국립농업과학원과 농업 분야 AI 기술 협력 모색 - 머니투데이",
-      "full_title": "크라우드웍스, 국립농업과학원과 농업 분야 AI 기술 협력 모색 - 머니투데이 - 머니투데이",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE96Nm5GUHB1N05Ob2MzWWFuVEFvVVFfMk5qblNaOHFTdXFibEFubGxZNHNfVGFrQlRPUWdlekxkRDBQbXNwUlBmTkEzQmJxOHdzUU54eGdSYTJRNC0tMzVuWWEtbkctcDha0gFuQVVfeXFMT29CZkVsT0RqNUs4RE1fRG5OX0l1RmFZTGpXem9wbHRweDFtdGlYNEtaekduTVc1ZDEzRkFKVlVubTlOMF9QcHg2T3g3RGZoVzJ4Yl9LVWtoOW5pcHphdnRVVFd5dVFRaEpkWTFKUEE?oc=5",
-      "source": "머니투데이",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "'테슬라' 좇는 미스트랄 AI, '카메라' 기반 로봇 AI 모델 공개",
-      "full_title": "'테슬라' 좇는 미스트랄 AI, '카메라' 기반 로봇 AI 모델 공개 - 더구루",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rVmVQSGZkZ0ZCZHlaODEwRnUyUEJ5d2FrTTFYaVJ0cmtkbXN4NkZlaEpRekNOQUxlaTRwQmxsMVFFTDhDakpGSWZRc3lvWG44OXZacWhGWWtyY2hTUmc?oc=5",
-      "source": "더구루",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "‘AI 시대, 해양의 미래’…제7회 인천국제해양포럼 개막",
-      "full_title": "‘AI 시대, 해양의 미래’…제7회 인천국제해양포럼 개막 - 부산일보",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBSTFZ5TFp4bDEzclJMb2oycHR0YlI2UHkzMTJRX0xXQXBSYlZjU0xsRE5CTHFtc3NjOW9KUUgzZFBodmpXV0hZcFZJOV9CRXZWT21Wa2FqRHRSNG5BbnJEOFI3N25nYUVxWjZWcmFPd0NlRTcw?oc=5",
-      "source": "부산일보",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "포항시, AI 기반 극지해양기술 개발 본격화…북극항로 시대 선점 나서",
-      "full_title": "포항시, AI 기반 극지해양기술 개발 본격화…북극항로 시대 선점 나서 - 퍼블릭뉴스통신",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE56a01HYjQ3WXFHYkhMTHJja0tkQmtqRlYySURaREVUeV9OWjU5UkswZy1JbFo1Xy1VMC1GU1k4cTZ5TVNnOWJ3VG1SUDhTcTFVLXJGczRsWUs5T1dQcTU2akhfQ3lKLUVRRXJF?oc=5",
-      "source": "퍼블릭뉴스통신",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI로 에너지·사회문제 푼다…SK이노, 청년 창업팀 10곳 육성",
-      "full_title": "AI로 에너지·사회문제 푼다…SK이노, 청년 창업팀 10곳 육성 - 파이낸셜뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CVWFaaVNvRklESHdrV2ZLVGN5UTZFUzQ3cFMxNlI5Vlg4UDQ0VnMzSUJoT2V5SkItTXBLX0hTNUtPVmNqSFZCZ2paVHl4dW5rU3A0LXRwN3FJZw?oc=5",
-      "source": "파이낸셜뉴스",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI 제품 공공조달 우대·취약계층 AI 이용비 지원한다",
-      "full_title": "AI 제품 공공조달 우대·취약계층 AI 이용비 지원한다 - 동아사이언스",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5NR1VIMUJnbDI5OGtOSnBaekF2RUExVjJYeDdHc0FsT3JHQ0dIWGFKUU9TeTNjOW9EZUZKS3VLeWN4cjRQNGZjZVZTRmFQQlJ6dWFFaQ?oc=5",
-      "source": "동아사이언스",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "[사설] AI 발 고용 쓰나미 충격, 대응책과 과제",
-      "full_title": "[사설] AI 발 고용 쓰나미 충격, 대응책과 과제 - 경북신문",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52OWY0X092N25UQ0Rtel9LLTktOFJpWjB5ek9yRVdzN2hZSXNGQnVCM3lKQlRuOXpzcDJpbDlZcWJ5UGdvUjcwSkU3Y0VzQlViUlZEYTJWOXk?oc=5",
-      "source": "경북신문",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI 기업들 '모두의 AI' 참여 검토…사업 조건 놓고 의견 엇갈려",
-      "full_title": "AI 기업들 '모두의 AI' 참여 검토…사업 조건 놓고 의견 엇갈려 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0eW1RZmdUd3o4LXI2RUlEM1EzWHVrMmIwdXJhZGVKVjAtVEJUdTVHcnFNT1pQWTJvcTgybndib2ZOU1Y1YW9EZHV0SU52NTM3MnEzNzln?oc=5",
-      "source": "지디넷코리아",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "구글, ‘2026 책임감있는AI X 앱생태계 공동 포럼’ 개최...“기술 혁신이 열어갈 AI와 앱 생태계의 미래 논의”",
-      "full_title": "구글, ‘2026 책임감있는AI X 앱생태계 공동 포럼’ 개최...“기술 혁신이 열어갈 AI와 앱 생태계의 미래 논의” - 인공지능신문",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XcnlGMUo5b1lnd1dLNTRxRUNsVlhsRG9ndzNrc01GVGVveVpSYUVzMmxvUWwtRnN3a3pBb2hlTjMzX1cxYVQyUGhFVEVuYlVBT1lOVEV3S3kyNHBzSEc5MmE4MUIxeVE?oc=5",
-      "source": "인공지능신문",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "포항…AI·위성 융합한 ‘극지해양기술’ 선점 나섰다",
-      "full_title": "포항…AI·위성 융합한 ‘극지해양기술’ 선점 나섰다 - 이로운넷",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9oeFJQNkxJMWRMeFNqMzJaSGxHalI3Nm1NV1JlYzhDZE9FV2JfWXhZMEdLOFIxRk1pOFZ0OE1pMW9LS3FZUlF1Zmpyd29pd3Z3XzFkVE5IRmFUOG53QkpsMDhzMUxFZw?oc=5",
-      "source": "이로운넷",
-      "pub_date": "2026-07-15",
+      "title": "카카오페이, 데이터·AI 기술 활용 대안신용평가 활성화 나서",
+      "full_title": "카카오페이, 데이터·AI 기술 활용 대안신용평가 활성화 나서 - edaily.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdDJlRlNFLW52X3NVYUpCU2UwQnNwc2ZrdkUyd3pUMkU3V2lqbDZidDQxbE91R3dxLTBUVFc0eXJaUGZFQ1Y2ZW9adGVfT1lpN2lWYUdpVDJ3d2lhSGt2U0pVU3BsMk95QXpCejI5bU94eGFJUEF5bVpXeTlRbWc4Mg?oc=5",
+      "source": "edaily.co.kr",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
@@ -276,323 +524,35 @@
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "정부, AI 제품 공공시장 진입 낮춰…납품실적 요건도 폐지",
-      "full_title": "정부, AI 제품 공공시장 진입 낮춰…납품실적 요건도 폐지 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FV25BYWpHRFVtd2NYOXpZY2VPUkZJYUxjazJHYjNfWEdEQ0xnd0RiT1JFaWc1aVkyNlJfa3ZCeVRWaTNUbmNiN0N6RlNzMXNlaEt6b01R?oc=5",
-      "source": "지디넷코리아",
-      "pub_date": "2026-07-14",
+      "title": "AI 반도체 혁신, 퓨리오사AI의 '레니게이드'로 에너지 효율 향상 증명",
+      "full_title": "AI 반도체 혁신, 퓨리오사AI의 '레니게이드'로 에너지 효율 향상 증명 - 스페셜타임스",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9yYndRaWZzdy0zbERzd3JOOHY2NU5xYUFuY0ZseU55bHAwUExlQ05hdUt2THBvOEJualRibDdZUWtsVktHZEprVDNpak1LbFFzXzZmQU5EWjd4SGMtUUozWGpjZVJUcmxaVXZheGVOdFplMlE?oc=5",
+      "source": "스페셜타임스",
+      "pub_date": "2026-07-16",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "\"AI 초과이익, 특별세로 공유범위 넓혀야\"…노동부 혁신 토론회(종합)",
-      "full_title": "\"AI 초과이익, 특별세로 공유범위 넓혀야\"…노동부 혁신 토론회(종합) - v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5vVTBoV09ZUWNpX2FVRXRpQzd6NUtLTU9FQUs1Q3IzZFRlRWhPUHU0WExmd2ZhTVVQeC1aX1ZyaTdSLTVfdFE?oc=5",
+      "title": "李대통령 \"AI 영상, 실제와 구별 안돼…악용 막아야\"",
+      "full_title": "李대통령 \"AI 영상, 실제와 구별 안돼…악용 막아야\" - 네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ma2JTc01ycjA3MjM3Z3Nna3Z5X2xVOGJGcnUwVW5NeEZEZEtPbzRWZzM2dWlTZmVBRVl3dGdCUHo5OUQxcTZqeFBWdFE0cUltTEY4?oc=5",
+      "source": "네이트",
+      "pub_date": "2026-07-16",
+      "keyword": "인공지능 AI 기술"
+    },
+    {
+      "title": "현대로템, 철도車 특화 ADAS 개발…“국산 피지컬AI 기술로 시장 선도”",
+      "full_title": "현대로템, 철도車 특화 ADAS 개발…“국산 피지컬AI 기술로 시장 선도” - v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBRMnFfYldIeWlETEkxWWdsS2t3UVRoR1BFX0FfR1JXMVFTLWttVFNMMllsZ1k5UWtxZnZPUjRCWHREMEM2S3BOX0hSUzl6blk?oc=5",
       "source": "v.daum.net",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "시흥시, 제조기업 인공지능(AI) 전환 ‘첫걸음’… 기업혁신 포럼 성료 > 뉴스",
-      "full_title": "시흥시, 제조기업 인공지능(AI) 전환 ‘첫걸음’… 기업혁신 포럼 성료 > 뉴스 - 더코리아",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kYzFUSGxUVDlqUFcxWFlZRUNRaDg4TlBuS193T2xoT2g1cE90eTdjc0lIX0pwVlRnclpBb0d5UDRqLUtOTUFlSUtuR19TMDhSN3dVQk1HVjYyeVBDNDZRaDUzR09vN0xRNWpGQk9zQ0U?oc=5",
-      "source": "더코리아",
       "pub_date": "2026-07-15",
       "keyword": "인공지능 AI 기술"
     },
     {
-      "title": "광주과학기술원-MIT \"사람과 교감하는 로봇 만든다\"",
-      "full_title": "광주과학기술원-MIT \"사람과 교감하는 로봇 만든다\" - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vRFhYdHprdFZPdzQtZnJTQ3p0aFk3TTFYZUlkQUtLak5sNUxWLThiNVdOTE42LXhsbGpuYjF4QW16VU9wT0Y4MlFvUG8wWG9Zclo4?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "경북도·포항시, \"AI 극지해양기술 개발\"…북극항로 선점",
-      "full_title": "경북도·포항시, \"AI 극지해양기술 개발\"…북극항로 선점 - 뉴시스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51X2V2ODNIalFfSHZ1ZHI4am1MQWs0TmV2cEtVMHo2a1dpLW54dmtFUUtzczBRVVgyWDJGWUlSVXF5Rm1RZVRQSTB1alk1UW9paFRJN2UzX2RLMW51X1JBbNIBeEFVX3lxTFBzOVlMQmNXZUY0R1Z4bUNrLVdzV3BWa1IzQ0FhQ1pPMVFKZDI5LWM0QVlZVmZLUDZNLV9nZUNyOHh3VlVjUFV5b0lBSkhQelgwXzUyWDBKOTJNTXA2LUlhMTZiQngwN3Vva09zRlZWWjdNQzRIM0d6RA?oc=5",
-      "source": "뉴시스",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "대한인공지능융복합학회 스마트시티분과위원장 이혜승, 신한금융그룹·행정안전부 ‘사회연대경제 임팩트업 프로젝트’ 선정",
-      "full_title": "대한인공지능융복합학회 스마트시티분과위원장 이혜승, 신한금융그룹·행정안전부 ‘사회연대경제 임팩트업 프로젝트’ 선정 - 매일타임즈",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzMUlINV9lcWFucFQwdThQT2R4dEVhYWhfa2hBa18xT1FFR0M2Tm5RSlJxczE0dHM3d2ZudGRKekp6dS1tWS1uQzRvRkdUaXZEZ1BfcDZaV2N4UHEwVmc?oc=5",
-      "source": "매일타임즈",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "SK이노, AI로 에너지·사회문제 해결할 청년 창업팀 10곳 키운다",
-      "full_title": "SK이노, AI로 에너지·사회문제 해결할 청년 창업팀 10곳 키운다 - 헤럴드경제",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CZHE4ZXNUWndndk8wUjJkOVQta185amlqOHBfZE1RLUZRdHpzeldjX2lRYWxPNWU5OHFhSzZNMmVvNVdPdjBFcHBOc3FlYlV6VFFLcXdR?oc=5",
-      "source": "헤럴드경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI가 신상품 먼저 경험…BGF리테일, 인텔리시아와 맞손",
-      "full_title": "AI가 신상품 먼저 경험…BGF리테일, 인텔리시아와 맞손 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzSjBKbkRrS1hOLTd2TjljLXY2WEFESU1kZFVvQW1od3AtTXF0aTc2d0REUk9EeENrazhuVnBfd0lfRHozZXppMHNfUFdTWFhsMEdqUnZR?oc=5",
-      "source": "지디넷코리아",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "'AI기본법' 국무회의 통과…인공지능 공공조달 구체화",
-      "full_title": "'AI기본법' 국무회의 통과…인공지능 공공조달 구체화 - v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0wS0sxdHRicG9MMHNLOEdOQlI0MG5zTTBCWmVUa2V2bUlpN0JEenpnZEpWaE5hMjg5TEJFVGpUd3pEZEUyVGI4WHczWXY2LVU?oc=5",
-      "source": "v.daum.net",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI·6G시대 데이터 기반 전파관리 방법론 제시...ETRI, AI 기반 주파수 예측기술 국제표준 이끌어",
-      "full_title": "AI·6G시대 데이터 기반 전파관리 방법론 제시...ETRI, AI 기반 주파수 예측기술 국제표준 이끌어 - 인공지능신문",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16Y0xEZURPM1p6NV96di1rbmpJanV6c2w2blI0ajRVdUtaQVlkVlFwVElHM0d4bXBDTXNCZ3ZJZGJ5Tld1NnZ1OUFvVmZxblcwWGlSSllEeUsyUVFFMGdNd2JUZTVGQk0?oc=5",
-      "source": "인공지능신문",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "KT, ‘AI 지역정보’ 출시…16개 광역 지자체 정책·문화 행사 TV 영상 제공",
-      "full_title": "KT, ‘AI 지역정보’ 출시…16개 광역 지자체 정책·문화 행사 TV 영상 제공 - CBC뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oVURkVEhJbmt4VnUxaHA5OWVZSVNEZnBFN05sdUszSkZ0WklxN2k2VXR6UW5kdFBjN3NFRkxlajNWVFJsY1hDeXljZE5QWGdPSHVzbUhBaWNKTE5TazcxTkZFbmxKZlBK?oc=5",
-      "source": "CBC뉴스",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "인공지능(AI) 기술을 활용하여 검찰청 홍보 영상곡을 제작하는 공모전이 개최됩니다.",
-      "full_title": "인공지능(AI) 기술을 활용하여 검찰청 홍보 영상곡을 제작하는 공모전이 개최됩니다. - Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS1RpOFBUay1RWnhaRFJReGVrRXlQb0VnU0kwSnFiV2tHUnFFUlBhZ2JGa2xGZ1hwOFppcnNhak1aREtlTWxtRXhySmhPYk0tSGtGTFQ4V1dqMUd6dkJ2dC02UUhNRGM5czVGSFZfU0xydTdDRzJ2RmhGV214Mll0bW1YajllLWhsaXB1XzRfelp5d1ZZNlRza0diZnVKbUs3Z3V4TG5LeXc?oc=5",
-      "source": "Vietnam.vn",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI가 키운 스마트팜, 제조업 새 먹거리",
-      "full_title": "AI가 키운 스마트팜, 제조업 새 먹거리 - 서울경제",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CajhSYkJQYzJTVXVxV25BSEhkNHZuNm85dXUwa1pRbE1jNFR0RlNtN01qSmVreUVzbmItelI2RTB2cFh6WTJsNE1ZZVM2WTVZVGfSAVNBVV95cUxOOHlrTUhsZVJGSlgwTUVSalZYdlZESHl4TGxiXzlEV19wZWt3ZDZyN3lzYTc3djdiNEhTWjdVNlJ5LU9SVkFRT0pWX1YzM3FTd0d3QQ?oc=5",
-      "source": "서울경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "[문화유산 대전환] ②AI가 여는 디지털 헤리티지 시대",
-      "full_title": "[문화유산 대전환] ②AI가 여는 디지털 헤리티지 시대 - 뉴스컬처",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9RRjROWnRucXoxR0NuWVZTWkZkOXloLXFMcU1HdTN6ZnJPOUc3ejQwRUkycEJVU0NqZTh3bERNdUJPSWZIZ2E5OEtxaFgtb2ZfaFhrTHV0YnZZajZVZ3F5RC1Lcmh4dw?oc=5",
-      "source": "뉴스컬처",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "[과기원NOW] GIST, 국제 음향 AI 경진대회 'DCASE 2026' 세계 1위 석권 外",
-      "full_title": "[과기원NOW] GIST, 국제 음향 AI 경진대회 'DCASE 2026' 세계 1위 석권 外 - 동아사이언스",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LUkd1Q1lwMDBFekQ0UjVESE1HYnJsRVdteVdVdnpROXlGQWxuT0tRcFNMQ0F3LU4zZ0o0NHdtRzdZRGQ4MnlfZ0EzUE1Nak5aRERoaQ?oc=5",
-      "source": "동아사이언스",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "인천시, 인공지능 전환(AX) 실무교육으로 마을기업 디지털 경쟁력 강화",
-      "full_title": "인천시, 인공지능 전환(AX) 실무교육으로 마을기업 디지털 경쟁력 강화 - 케이에스피뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5yZXhRb096dkdrQVBJUWlHOGpKTVVHUktKc20yM2poNDdtcmNPNE5ndnZPNTVBUzIteV9uR3djRm5HRG92RGc?oc=5",
-      "source": "케이에스피뉴스",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "인공지능 전환 발맞춰 노동환경 변화 대책 모색",
-      "full_title": "인공지능 전환 발맞춰 노동환경 변화 대책 모색 - v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBvTnMxa0g0OHYwV283bGVlRmdkNlUzYlBOLWRpYVRSRkowdEVGM0JtdTh5STJhc3R1WWNOSW9nYmhBOXkwVURLN2hiaWNzMXM?oc=5",
-      "source": "v.daum.net",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "컴투스플랫폼, 'AMPLIFY 2026'서 AI 탑재한 글로벌 게임 플랫폼 비전 발표",
-      "full_title": "컴투스플랫폼, 'AMPLIFY 2026'서 AI 탑재한 글로벌 게임 플랫폼 비전 발표 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oSWpEeGRyOGFOU0VlRDI3WWZsTFgxalIwcWE1ano2RGVTdmdPUUQ4c0VDQTRBVEctTWd4LTV1V3A3MVNTZTBhNmFOR2d6UnFpcTRRMXV3?oc=5",
-      "source": "지디넷코리아",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“AI로 에너지·사회문제 해결”…SK이노, 청년 창업팀 10곳 육성한다",
-      "full_title": "“AI로 에너지·사회문제 해결”…SK이노, 청년 창업팀 10곳 육성한다 - 서울경제",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xMlBiRlpCMTBVTUprWGZKSDh4c2ZQcWpQYVJuT1hKMXBtVFF2eFM0TzVGV1R0UGZKLUpVUFJpd3pnX1o4bUpQZkdBRGFIVWt5OUHSAVNBVV95cUxPSTdNMkxZQ2NpTXRjTXhwc0RaRnZJbnB0QUJ6TTFXWEFHc2FKTkRZV1JLVzJ3cUNnWlBvaDJEUks5aDc4N2xvdGR4aTJDMkEwQnk5aw?oc=5",
-      "source": "서울경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "한화비전, '치명적 망각' 난제 풀었다…소리 기억하는 AI기술 개발",
-      "full_title": "한화비전, '치명적 망각' 난제 풀었다…소리 기억하는 AI기술 개발 - edaily.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYmQyUGNyanRqdnZ3T2hOTHZmMV9fQTFzWDlSSjlFWGF6Mk0zdjhfOC1LSDBndVNCQVExQlJkOXQ4TmZpb29TNFd1bjdDdjJ4LUdPUURLOTZTZ1ltd1dYZXA3akJjbUZnd3JqY0ZzTFFlblRDaUJHYVhPR2tna0RYMg?oc=5",
-      "source": "edaily.co.kr",
-      "pub_date": "2026-07-13",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "광명시 학온동, 인공지능과 음악으로 만드는 특별한 추억 ‘우리들의 블루스’ 음악 발표회",
-      "full_title": "광명시 학온동, 인공지능과 음악으로 만드는 특별한 추억 ‘우리들의 블루스’ 음악 발표회 - newszoom.kr",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9BQ1J3bkFrbThPblNnc1dTTlVUUWFrOExMdVF2NXdLNlNNMVZFQmJ5Ul9xTWhnd1N3NnI5YXpvTUhuWU5p?oc=5",
-      "source": "newszoom.kr",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“보험 서류, AI가 알아서 척척”…NH농협생명, ‘AI 통합 이미지 시스템’으로 보험업무 AX 대전환",
-      "full_title": "“보험 서류, AI가 알아서 척척”…NH농협생명, ‘AI 통합 이미지 시스템’으로 보험업무 AX 대전환 - 스마트경제",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBwVm00bmJWVHpiQ3dvS1o3VUdtUmZNU3hBUDlUTFlsUW00Vk9GS0RpYkQtOG1vRVBlTXZ0d3BLZG5GalZrQTM4MGFCdW45RFpucE9uTFhwRTg0QkJLSHJSQmdKS1pWZlMzZFVXQ1czZw?oc=5",
-      "source": "스마트경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "(돋보기)어르신 인공지능(AI) 돌봄 시스템으로 생명 구해",
-      "full_title": "(돋보기)어르신 인공지능(AI) 돌봄 시스템으로 생명 구해 - 일간경인",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1tVWstdDdhWHZwNndLanVTdUVKZTdFSnJ0enBaUnhPbGJZWlI1YmNqZkp1YW5FdVVzY0pZWlU5a1ZRNzJp?oc=5",
-      "source": "일간경인",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "용인특례시, AI 스마트 횡단보도 17곳 확충…어린이 통학안전 강화",
-      "full_title": "용인특례시, AI 스마트 횡단보도 17곳 확충…어린이 통학안전 강화 - 경기일보",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QNmk4c0ktQzFweDlHS1NNTGhIOVhzbzF5RVhCQmVzbkwtNkRHNnZWNklKYm1FZUFBejNuNnVoY3d5SDc3cTk3SzRhUFlPa3REVEF2RFlrYmtXSTg?oc=5",
-      "source": "경기일보",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“총칼 대신 AI로 싸운다” 성균관대·51사단 손잡고 ‘디지털 전사’ 키운다",
-      "full_title": "“총칼 대신 AI로 싸운다” 성균관대·51사단 손잡고 ‘디지털 전사’ 키운다 - 스마트경제",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CNVJYdXhkQnkxWjYtYS1YamNmUmFZeHdTcXVxZ1dJNFkwLXZPX2taWFhqQTI5c2IyMkJqOVRvYW5oOVFlaXJoVmFQWlp4UTE0dUo3Z3NPVnZMdExtOE50ak4zUWJ4RVh4MWJxdGhndw?oc=5",
-      "source": "스마트경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "양평군, ‘인공지능 돌봄 24’로 홀몸 어르신 골든타임 사수",
-      "full_title": "양평군, ‘인공지능 돌봄 24’로 홀몸 어르신 골든타임 사수 - 경기일보",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxclhZdWlSMkhNYncyTm8xdjFSN2R2aDlFUDZrZEZYRXc2aXRYYllXcW02N2dJb3BXU29iZE90cVFtcG1Md0RSTUJvNDV5Ny1oYklHYVhzbmdURFU?oc=5",
-      "source": "경기일보",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "SK이노베이션, AI로 에너지·사회문제 푼다…창업팀 10곳 선발",
-      "full_title": "SK이노베이션, AI로 에너지·사회문제 푼다…창업팀 10곳 선발 - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE01bDhjb1d0TU5peG44S0t5N194TnM2Y1UxMEhvbkJfSHkzUjU3MnZ5REM3MUQ4SzVGSmctWWtUbUloXzJ5SGpqN0pVUElGeDhWNHZN?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "강서구, AI 기반 진로 체험 프로그램 운영…\"교육부 공모 사업 선정\"",
-      "full_title": "강서구, AI 기반 진로 체험 프로그램 운영…\"교육부 공모 사업 선정\" - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tSUs4ZDhVcHpxdW51aWhENG9FSkFhQ1JiU25mMzM0U1FiN2RmUThmazhjRmJiNHhSdzZxa1hmT0RNbW11QmFIa29Ka29hQXpaM1FV?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "서울사이버대 “진짜 교수는 연구실에, 모니터엔 AI 분신이”… ‘AI 휴먼’ 강의 전면전",
-      "full_title": "서울사이버대 “진짜 교수는 연구실에, 모니터엔 AI 분신이”… ‘AI 휴먼’ 강의 전면전 - 스마트경제",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA1eGdfaVJ1QUJkWkxGY2ktWXdYZXNlbVFTVGpuSXJkWDJNU1JaTm5iUWo5VER5Z1BnaGozT1lrN0ZHcGtDZi1aelpwQUVPbU1SOFhlRTZzM1plUHcxbUtNOFFobldNd1FLZnIyY1A5bw?oc=5",
-      "source": "스마트경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "크라우드웍스, 국립농업과학원과 농업 AI 협력 모색",
-      "full_title": "크라우드웍스, 국립농업과학원과 농업 AI 협력 모색 - edaily.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM0FjaUtCNENwVUhHaGNvTnFGVTcySFFuX09OZ295QlZJR01PRzFKS2ZNSGlxR1VQaU15aGd3bnJiblU3X0VqMG44cXhaRzMxd21SejN1OHJyQ0lZXzYxT21vX0NPWGMzZWgyR0tibVRyUVZBZnVYNXhwdngxUDJuTA?oc=5",
-      "source": "edaily.co.kr",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "SK이노베이션, AI로 사회문제 해결할 청년 창업팀 10곳 키운다",
-      "full_title": "SK이노베이션, AI로 사회문제 해결할 청년 창업팀 10곳 키운다 - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tNzBRVUo0LXpTdHdpWjVOYTVVQjczN1hEZWNmZWF3eWt6aWx2QWhJbmpKMWJFdzNtUUhjb2g4RDltQWZ1VXRpVDZ1R2oyczgwNmFZ?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "“국가기술자격, AI 시대 맞아 직무역량 중심으로 개편해야”",
-      "full_title": "“국가기술자격, AI 시대 맞아 직무역량 중심으로 개편해야” - 서울경제",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rRm0xR3M4NjhhVWc1QlVteE9FMW5zcGFUXzZqU2p4clJhclhzQTlFVFRNZWZRTnI5YnlYRlpMYlVNZlhQVk9HMDVZM0ZuRG8xN2fSAVNBVV95cUxPVTVzME5ROUpsNTNkWEx3ODVWRjctYlJFYnYwbnNENkNTRENlMDNDVjJHWnJjc18ya0UwRkNzcFptMFJkTjBlSHJCNXlLTFZIWE5HWQ?oc=5",
-      "source": "서울경제",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "KT, 미래 AX 기술 총출동…AI·6G·데이터 한자리 공개",
-      "full_title": "KT, 미래 AX 기술 총출동…AI·6G·데이터 한자리 공개 - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBtbm5uR2JiVEJHeWluT05ITjc0M3p3LTdUUlo5OGs0NGxud0loTmw1R2NieHVNY2lRY1pFUk1KeFM2MDBrZ0cyak1rWTNxS0ZfOG8w?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "SK이노, AI 청년 창업팀 육성…\"에너지·사회문제 해결\"",
-      "full_title": "SK이노, AI 청년 창업팀 육성…\"에너지·사회문제 해결\" - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE83SzZyN3V2WTBZaE9KRlZfS19ZSHVyXzRiUEVWWU94a0JZUURhN0gxdnpTcFozVm9ZZVZBaWN1djBkWjI1RHRjWk9ZRU91WF9URDIw?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "성균관대 \"육군 제51보병사단과 국방 AI 대전환 이끌 인재 양성\"",
-      "full_title": "성균관대 \"육군 제51보병사단과 국방 AI 대전환 이끌 인재 양성\" - E동아",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14aWdHNnd0bkR0eWg4a1Zma3N0SzNMMVhha085bU9tVGJEMHlVRXRjTVA5YU1Qek56MjZsUm9haXlZb2FWSlZURk9YV1FOSDdWblZJX2NvUkVOZzJ1SVg1dkZ1cm5CeTQ?oc=5",
-      "source": "E동아",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "SK이노베이션, 'AI 임팩트 솔루션' 킥오프…\"청년 창업팀 10곳 선발\"",
-      "full_title": "SK이노베이션, 'AI 임팩트 솔루션' 킥오프…\"청년 창업팀 10곳 선발\" - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IVFdsU29nd29GSm9XWmxBdkRQdVpEUnh5S1NBY0FzZUFKUGowM3BteWV0M3JHMW5hcW5oLWNyQ3ZwTkJpZnQ3WERjYnB1ZXp6ZHNr?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "함안군, '생성형 인공지능(AI) 기반 업무 비서' 도입 스마트 행정 본격화",
-      "full_title": "함안군, '생성형 인공지능(AI) 기반 업무 비서' 도입 스마트 행정 본격화 - gukjenews.com",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ycHB4X1lMRjh6ZHhIa0hsREhfemtlWmluVC16dENURHc4ZVpLeVN2TF9uZDY2OEJXRDhfZmhyQmNBcWFCem5qeTFhWnNxUDFTM3hfaE5tUzh3eElpLWJLeUpIa1o1UTF3MExodnpR?oc=5",
-      "source": "gukjenews.com",
-      "pub_date": "2026-07-14",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "성균관대, 육군 51사단 대상 'AI 디지털 역량 강화' 교육",
-      "full_title": "성균관대, 육군 51사단 대상 'AI 디지털 역량 강화' 교육 - 네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wZDlRLXVyR1FUSmZDSjkyN1BiQzBBaVB6cHlwS09IWWlpenhwWlJBN0Y0RDZCZWh6ZFRGRnRqZlVNd0NzRDlQU2RoRzg4RXV2aHRz?oc=5",
-      "source": "네이트",
-      "pub_date": "2026-07-15",
-      "keyword": "인공지능 AI 기술"
-    },
-    {
-      "title": "AI 고도화의 시대, 보안담당자가 갖춰야 할 AI 활용 대응 역량은 어떻게 만들까",
-      "full_title": "AI 고도화의 시대, 보안담당자가 갖춰야 할 AI 활용 대응 역량은 어떻게 만들까 - 보안뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MS21tY2NvWHRyNE93RE5zMHlmT2M2eTNQUDB3d05MbzJ6OXNzMEF6ZjhqTDhQSHJXRWFSX21XRHhVcVJLQi15eFotUm8zWk1xR3d1T05ybzlENUFfRXc?oc=5",
-      "source": "보안뉴스",
-      "pub_date": "2026-07-15",
-      "keyword": "생성형AI LLM"
-    },
-    {
-      "title": "언어에서 현실 세계로...AI 업계 '월드 모델' 뜨나",
-      "full_title": "언어에서 현실 세계로...AI 업계 '월드 모델' 뜨나 - 초이스경제",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jVHFkbDk2VHI5OUdzYl9OZDktSFp1NEdLeV8wRnFLLVhzR3VxR3hEX2dheTFpQXlmdEx5RHVsLUpzSVRkbEFXbnZYQ3ZMYTduR0pQdUZKd2hGM0NObFh6VnpPMlU0a2dGUk5BQmExM0E2SFXSAXNBVV95cUxPY1RxZGw5NlRyOTlHc2JfTmQ5LUhadTRHS3lfMEZxSy1Yc0d1cUd4RF9nYXkxaUF5ZnRMeUR1bC1Kc0lUZGxBV252WEN2TGE3bkdKUHVGSndoRjNDTmxYelZ6TzJVNGtnRlJOQUJhMTNBNkhV?oc=5",
-      "source": "초이스경제",
-      "pub_date": "2026-07-14",
+      "title": "경기일자리재단, '인공지능 전환 시대의 고용과 일자리정책' 발간",
+      "full_title": "경기일자리재단, '인공지능 전환 시대의 고용과 일자리정책' 발간 - 프레시안",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WNWlNSkU0SEl6Q3lna1dzT0NqSkZ2NU0wNGV6amZibTNub3VubFRuMl9CNnRwdVo0cEFCekw1em5FZVVGbjNNOXkxXzMxclBmSXFZRTFPWUQwZE8xX3N0c0E3dU1oUGRKNXh3?oc=5",
+      "source": "프레시안",
+      "pub_date": "2026-07-16",
       "keyword": "생성형AI LLM"
     },
     {
@@ -604,36 +564,12 @@
       "keyword": "생성형AI LLM"
     },
     {
-      "title": "전북대, 멀티 LLM 기반 생성형 AI 서비스…이용자·만족도 ↑",
-      "full_title": "전북대, 멀티 LLM 기반 생성형 AI 서비스…이용자·만족도 ↑ - MSN",
-      "link": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNQ0pqWDFyMEVIMGNhVWczejJzVnA0OWpjMUxod1JYNkpPU1BzRWhWSHRuYndLaUZPNjl0T2lpT0QyRUZfZzlTY0tRR2Rqc1o3ODdhQW91YmdOaDhQR0tqTFJFdXZGZWNHeVN6cFFGeU1ieEx1aHZmNUV0b0xGM3o1ZkRuR0lSOEJibXdJdVVjTEJPR0VnSVF0Q3l1X25KN3E0c3QxV3Y3WGI2cm9JY3hXNHBUWVZreFZpU21WbE9hdzdMZlJTNFhCS1pvRXo2bXlCYm0wTGFKV2xMV0lJMGp2bUxGS0pESUpQd2MtZzdIMEtpNDkxd2pONXRodGJNZldEQmlpLTZNeVI1RTN2TWVnNnBVSV9QZ2NDVUNobW04SnJtR1hZMmZQcm13YktjeUFpWUd4NFpUc0ZBaU1DdUdBTTBYa1RoZnN0c0FUMWUxcjdKZ1k5ZEpLTGNQa3VJV3JiZU9zUzBJdW9LN3I4Q2dBR2M4bUg5aTRHMHhKQkZaeDNDb1hOZnpOMXBpaHhLOVUxTzlDaGpjdDVDQUpjYzJMMVNQdy1UTHp0T3pVSkV2YW1tbTdQMGtVRTlmMTZ3UUs3dHd4VFVHT3BzX1hUd2lvUFRWNmcxOXVXcmtGWkEwenpoeXFDa1FkMA?oc=5",
-      "source": "MSN",
-      "pub_date": "2026-07-14",
-      "keyword": "생성형AI LLM"
-    },
-    {
-      "title": "경남도·경남테크노파크, '동남권 정보보호 사이버공방전' 개최",
-      "full_title": "경남도·경남테크노파크, '동남권 정보보호 사이버공방전' 개최 - 연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TQnVfbU1BaEVRY01nVHZoTWdiUkdRZ3FMMWV5Z0pTQmlwV3VaWURPblROTElPVlhYLUE5ZzJ2ekV3eTkyQXMzemptOFdvZkZTd3BFX2ZSeVNNMWvSAWBBVV95cUxQOXJoTUVqV2E4ZFNnenM1T1RXZmFFT204N0FKQWdVQndEMy1KSTRWQTZuajJZWXdOUUgtaVBmTUxRSlJJa05iV3N3OVhzRGtvTFJoMk5UWnJmam9Wak1tdE0?oc=5",
-      "source": "연합뉴스",
-      "pub_date": "2026-07-13",
-      "keyword": "사이버보안 침해사고"
-    },
-    {
-      "title": "고양시, 실무 중심 ‘사이버보안 교육’으로 행정 서비스 안전망 강화",
-      "full_title": "고양시, 실무 중심 ‘사이버보안 교육’으로 행정 서비스 안전망 강화 - 시사일보",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9uYU8zQ3cwNFVQSVFrZ1ZibUxfWDhzUTB6OThBWTNRZ1loQjJEWTNtQVFCZEFwRGRIcHpvb05YejBqWmhTamJPQjFmODQ?oc=5",
-      "source": "시사일보",
-      "pub_date": "2026-07-14",
-      "keyword": "사이버보안 침해사고"
-    },
-    {
-      "title": "고양시, 부서 보안담당자 대상 '2026년 사이버보안 집합교육' 실시…실무 중심 보안 역량 강화",
-      "full_title": "고양시, 부서 보안담당자 대상 '2026년 사이버보안 집합교육' 실시…실무 중심 보안 역량 강화 - 내외뉴스통신",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CUFotZTU3VjEySWU2NFlrRmx1TTVzOWstQTZiTmdaTmZPNWZRc1dIOC1SQjg2eU5MLVZUQUZ5Zlo4NnJqSHpJRTBveDBkd3JLakZIMFZvd2RrTF9DU2RVME9BaHV3UXNMUXg3LdIBcEFVX3lxTFB2U2FQR3dqb3hFR0ctQktnek0ycjNwUVc3VWZxbnpsRUg2Sms5Z0xSSndTeEYzSVg2N2hEUFltdTU3cnRoS3pkYk9BdnEtcGtVV3pmRzlMVG9seXh5MlhVYlZlMFNxTVMxUUl4bjlJT0Q?oc=5",
-      "source": "내외뉴스통신",
-      "pub_date": "2026-07-14",
-      "keyword": "사이버보안 침해사고"
+      "title": "KT, 빅데이터 기반 플랫폼으로 홈쇼핑 기업과 사업 협력",
+      "full_title": "KT, 빅데이터 기반 플랫폼으로 홈쇼핑 기업과 사업 협력 - 지디넷코리아",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tWVFBVHFWN3UxN0FLcUQ0Nl9hNFdjTkRZTzJKRVp4ZHNFM3ppU3VuM3N4dXhBUmw3NERJNkZNWlVEUmR3aWdHS0J3LURtRG54NzVRaklB?oc=5",
+      "source": "지디넷코리아",
+      "pub_date": "2026-07-16",
+      "keyword": "빅데이터 데이터분석 플랫폼"
     },
     {
       "title": "미래 인터넷 인프라의 지속 가능한 발전을 위한 전략적 운영 모델.",
