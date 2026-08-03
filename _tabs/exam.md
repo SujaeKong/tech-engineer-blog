@@ -5,7 +5,7 @@ order: 2
 title: 출제예상
 ---
 
-> 정보관리기술사 회차별 출제 예상 토픽 시리즈. 기출 + 모의/합숙/파이널라운드(KPC·ITPE) + 최근 뉴스 트렌드를 분석해 회차별 핵심 토픽을 선정합니다.
+> 정보관리기술사 회차별 출제 예상 토픽 시리즈. KPC 기출·합숙·모의 + 최근 뉴스 트렌드를 분석해 회차별 핵심 토픽을 선정합니다.
 {: .prompt-info }
 
 {% assign exam_posts = site.posts | where_exp: "post", "post.tags contains 'exam-prediction'" | sort: 'date' | reverse %}
@@ -34,7 +34,7 @@ title: 출제예상
 
 ---
 
-- 기출 데이터: [KPC·ITPE 정보관리기술사 기출·합숙·모의·파이널라운드 통합 검색](https://kpcitpe-search.pages.dev/){:target="_blank"}
+- 기출 데이터: [KPC 정보관리기술사 기출·합숙·모의 통합 검색](https://kpcitpe-search.pages.dev/){:target="_blank"}
 
 > 예측은 학습 참고용이며 출제를 보장하지 않습니다.
 {: .prompt-warning }

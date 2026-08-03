@@ -8,7 +8,7 @@ source_url: ""
 ---
 
 > **140회 출제 예상 토픽 #4** — 137~139 미출제, 학원 집중 드릴
-> 선정 근거: ① 두 학원 모의에서 MLOps·AIOps·DataOps 동반 출제, ② AI가 PoC를 넘어 **운영(Operation) 단계**로 이동, ③ 138 데이터 관측가능성 단답 → 140 운영 통합 논술화, ④ LLM 대규모 배포로 LLMOps 부상
+> 선정 근거: ① KPC 모의·합숙에서 MLOps·AIOps·DataOps 동반 출제, ② AI가 PoC를 넘어 **운영(Operation) 단계**로 이동, ③ 138 데이터 관측가능성 단답 → 140 운영 통합 논술화, ④ LLM 대규모 배포로 LLMOps 부상
 {: .prompt-info }
 
 ## 1. 출제 트렌드 분석 (135~139회)
@@ -18,7 +18,7 @@ source_url: ""
 | 138회 | 관리 단답 | 데이터 관측가능성(Data Observability) | 데이터 운영 |
 | 139회 | 관리 논술 | AI 학습용 데이터 품질관리 | 데이터 품질 |
 | 139회 | 관리 논술 | LLM 기반 AX 시스템 구축 | AI 도입 |
-| 모의/파이널 | KPC·ITPE | MLOps·AIOps·DataOps | **140 집중** |
+| 모의/합숙 | KPC | MLOps·AIOps·DataOps | **140 집중** |
 
 **핵심 인사이트**: 데이터 품질·관측가능성(138·139)에서 **운영 자동화(Ops 3형제)**로 확장. AI 시스템의 지속 운영·거버넌스가 논술화될 가능성.
 
@@ -94,7 +94,7 @@ source_url: ""
 - [신한은행 AI 에이전트 21종 공개와 엔터프라이즈 AI 에이전트 오케스트레이션 아키텍처](/tech-engineer-blog/posts/신한은행-AI-에이전트-21종-공개와-엔터프라이즈-AI-에이전트-오케스트레이션-아키텍처/)
 - [기출 검색: MLOps](https://kpcitpe-search.pages.dev/?q=MLOps){:target="_blank"}
 
-> **출처**: KPC·ITPE 기출/모의/합숙/파이널라운드 통합 + 블로그 트렌드 (v7-multi, 137~139 미출제 필터)
+> **출처**: KPC 정보관리기술사 기출·모의·합숙 통합 + 블로그 시사 트렌드 (v7-multi, 137~139 미출제 필터)
 {: .prompt-tip }
 
 ## 9. 핵심 두음
