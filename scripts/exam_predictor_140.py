@@ -140,6 +140,23 @@ QUOTA_KEYWORDS = {
 W_SOURCE = {'past': 5.0, 'camp': 5.0, 'mock': 1.5}
 W_TYPE = {1: 0.8, 2: 1.3, 0: 1.0}
 
+# === 최근 출제 배제: 기술사는 직전 회차 토픽을 연속 출제하지 않음 ===
+# 137~139회 관리 기출에 나온 용어를 회차별 감점(최근일수록 강하게).
+def _tested_terms(rounds):
+    wb = xlrd.open_workbook('kpc_exam.xls'); sh = wb.sheet_by_name('기출')
+    m = {}
+    for r in range(1, sh.nrows):
+        rv = sh.cell_value(r, 0)
+        if not isinstance(rv, float): continue
+        R = int(rv)
+        if R not in rounds: continue
+        if str(sh.cell_value(r, 1)) != '관리': continue
+        for t in extract_terms(sh.cell_value(r, 3)):
+            m[t] = max(m.get(t, 0), R)   # 가장 최근 출제 회차 기록
+    return m
+RECENT_TESTED = _tested_terms({137, 138, 139})
+RECENT_PENALTY = {139: 0.08, 138: 0.20, 137: 0.45}  # 최근일수록 강한 감점
+
 def time_weight(target_date, rec_date):
     if rec_date >= target_date:
         return 0
@@ -211,6 +228,13 @@ def predict(target_round):
         for t in list(score.keys()):
             if (kl in t.lower() or t.lower() in kl) and t not in boosted2:
                 score[t] *= 1.5; boosted2.add(t)
+
+    # 최근 출제(137~139) 강한 감점 — 직전 회차 토픽 연속 출제 회피
+    if target_round == 140:
+        for t in list(score.keys()):
+            R = RECENT_TESTED.get(t)
+            if R:
+                score[t] *= RECENT_PENALTY[R]
     return score
 
 def pick_with_quota(score, quota, total):
