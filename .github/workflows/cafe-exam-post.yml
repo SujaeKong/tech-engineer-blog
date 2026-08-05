@@ -57,13 +57,14 @@ jobs:
             post)       python3 scripts/post_exam_predictions_to_cafe.py ;;
           esac
 
-      - name: Commit posted-state (post 모드에서 재게시 방지)
-        if: ${{ (github.event.inputs.mode || 'post') == 'post' }}
+      - name: Commit posted-state (성공 카드 기록 → 재게시 방지)
+        # 일부 카드가 실패해 게시 스텝이 exit 1 이어도, 성공분은 반드시 기록한다.
+        if: ${{ always() && (github.event.inputs.mode || 'post') == 'post' }}
         run: |
-          if [ -f _data/exam_cafe_posted.json ] && ! git diff --quiet _data/exam_cafe_posted.json; then
+          git add _data/exam_cafe_posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add _data/exam_cafe_posted.json
             git commit -m "chore: record exam-prediction cafe posts"
             git push
           fi
