@@ -1,7 +1,10 @@
 name: "Cafe Exam-Prediction Post"
 
 # 140회 출제예상 카드 10개를 카페 '출제예상문제' 게시판에 한 카드당 1글씩 게시.
-# 수동 실행 전용(workflow_dispatch). naver.com이 열려 있는 GitHub 서버에서 게시한다.
+# naver.com이 열려 있는 GitHub 서버에서 게시한다.
+#  - workflow_dispatch: 수동 실행(list_menus/dry_run/post 선택)
+#  - push: _data/exam_cafe_trigger.txt 가 갱신되면 자동 post 실행
+#          (성공한 카드는 _data/exam_cafe_posted.json 에 기록되어 재실행 시 skip)
 on:
   workflow_dispatch:
     inputs:
@@ -19,6 +22,10 @@ on:
         type: string
         required: false
         default: "137"
+  push:
+    branches: [master]
+    paths:
+      - "_data/exam_cafe_trigger.txt"
 
 permissions:
   contents: write
@@ -40,16 +47,18 @@ jobs:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           NAVER_REFRESH_TOKEN: ${{ secrets.NAVER_REFRESH_TOKEN }}
-          EXAM_MENU_ID: ${{ github.event.inputs.menu_id }}
+          # push 트리거는 inputs가 비어 있으므로 post / 137 로 기본 동작
+          EXAM_MENU_ID: ${{ github.event.inputs.menu_id || '137' }}
+          MODE: ${{ github.event.inputs.mode || 'post' }}
         run: |
-          case "${{ github.event.inputs.mode }}" in
+          case "$MODE" in
             list_menus) python3 scripts/post_exam_predictions_to_cafe.py --list-menus ;;
             dry_run)    python3 scripts/post_exam_predictions_to_cafe.py --dry-run ;;
             post)       python3 scripts/post_exam_predictions_to_cafe.py ;;
           esac
 
       - name: Commit posted-state (post 모드에서 재게시 방지)
-        if: ${{ github.event.inputs.mode == 'post' }}
+        if: ${{ (github.event.inputs.mode || 'post') == 'post' }}
         run: |
           if [ -f _data/exam_cafe_posted.json ] && ! git diff --quiet _data/exam_cafe_posted.json; then
             git config user.name "github-actions[bot]"

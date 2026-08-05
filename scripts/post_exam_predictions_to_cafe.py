@@ -21,6 +21,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 
 BLOG_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -322,6 +323,7 @@ def main():
             if not args.dry_run:
                 posted.add(key)
                 save_state(posted)
+                time.sleep(2)  # 카페 연속 게시 스팸 방지
 
     print(f"\n[DONE] 게시 {ok}건, 건너뜀 {skipped}건 (총 카드 {len(cards)}개)")
 
