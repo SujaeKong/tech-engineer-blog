@@ -217,7 +217,7 @@ def post_article(menu_id, title, content, token, dry_run=False):
         print(f"\n[DRY-RUN] 게시판(menu)={menu_id}")
         print(f"[DRY-RUN] 제목: {title}")
         print(f"[DRY-RUN] 내용({len(content)}자):\n{content.replace('<br>', chr(10))}\n")
-        return True
+        return True, False
 
     import tempfile
     url = f"https://openapi.naver.com/v1/cafe/{CLUB_ID}/menu/{menu_id}/articles"
@@ -240,16 +240,18 @@ def post_article(menu_id, title, content, token, dry_run=False):
         os.unlink(data_file)
 
     response = result.stdout or result.stderr
+    # 반환: (성공여부, 재시도가능여부). 네이버 '연속 등록' 제한은 잠시 후 재시도하면 풀린다.
+    retryable = "연속" in response or '"code": "999"' in response or '"code":"999"' in response
     try:
         rj = json.loads(response)
         if rj.get("message", {}).get("status") == "200":
             print(f"[SUCCESS] {rj['message']['result'].get('articleUrl', '')}")
-            return True
+            return True, False
         print(f"[ERROR] 게시 실패: {response}")
-        return False
+        return False, retryable
     except json.JSONDecodeError:
         print(f"[ERROR] 응답 파싱 실패: {response}")
-        return False
+        return False, retryable
 
 
 def load_state():
@@ -307,7 +309,13 @@ def main():
             print("[ERROR] access_token 획득 실패 (refresh_token 확인)")
             sys.exit(1)
 
-    ok, skipped = 0, 0
+    # 네이버는 연속 게시를 막으므로(에러 999) 게시 간 넉넉히 대기하고,
+    # 제한에 걸리면 대기를 늘려가며 재시도한다. (환경변수로 조정 가능)
+    post_delay = int(os.environ.get("POST_DELAY", "60"))    # 성공 후 다음 게시까지 대기(초)
+    retry_wait = int(os.environ.get("RETRY_WAIT", "60"))    # 연속제한 시 재시도 기본 대기(초)
+    max_retries = int(os.environ.get("MAX_RETRIES", "6"))   # 카드당 최대 재시도
+
+    ok, skipped, failed = 0, 0, 0
     for path in cards:
         key = os.path.basename(path)
         if key in posted:
@@ -318,14 +326,30 @@ def main():
         cafe_title = f"[140회 출제예상 #{card['topic_no']}] {card['title'].replace('[출제예상 140회] ', '')}"
         cafe_content = make_content(card)
         print(f"[INFO] #{card['topic_no']} [{card['category']}] {card['title']}")
-        if post_article(args.menu_id, cafe_title, cafe_content, token, dry_run=args.dry_run):
-            ok += 1
-            if not args.dry_run:
-                posted.add(key)
-                save_state(posted)
-                time.sleep(2)  # 카페 연속 게시 스팸 방지
 
-    print(f"\n[DONE] 게시 {ok}건, 건너뜀 {skipped}건 (총 카드 {len(cards)}개)")
+        attempt = 0
+        while True:
+            success, retryable = post_article(args.menu_id, cafe_title, cafe_content, token, dry_run=args.dry_run)
+            if success:
+                ok += 1
+                if not args.dry_run:
+                    posted.add(key)
+                    save_state(posted)
+                    time.sleep(post_delay)  # 다음 카드 전 대기
+                break
+            if retryable and attempt < max_retries and not args.dry_run:
+                attempt += 1
+                wait = retry_wait * attempt  # 재시도마다 대기 증가
+                print(f"[RETRY] 연속 등록 제한 — {wait}s 대기 후 재시도 ({attempt}/{max_retries})")
+                time.sleep(wait)
+                continue
+            failed += 1
+            print(f"[FAIL] 게시 실패(재시도 소진/불가): {key}")
+            break
+
+    print(f"\n[DONE] 게시 {ok}건, 건너뜀 {skipped}건, 실패 {failed}건 (총 카드 {len(cards)}개)")
+    if failed and not args.dry_run:
+        sys.exit(1)  # 실패가 있으면 CI가 빨간불로 알림
 
 
 if __name__ == "__main__":
