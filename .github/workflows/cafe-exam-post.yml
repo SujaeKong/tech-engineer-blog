@@ -1,0 +1,60 @@
+name: "Cafe Exam-Prediction Post"
+
+# 140회 출제예상 카드 10개를 카페 '출제예상문제' 게시판에 한 카드당 1글씩 게시.
+# 수동 실행 전용(workflow_dispatch). naver.com이 열려 있는 GitHub 서버에서 게시한다.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "실행 모드"
+        type: choice
+        required: true
+        default: dry_run
+        options:
+          - list_menus   # 카페 게시판 목록 조회(menu id 확인용)
+          - dry_run      # 게시 없이 미리보기
+          - post         # 실제 게시
+      menu_id:
+        description: "출제예상문제 게시판 menu id (post 모드에서 필수)"
+        type: string
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  exam-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run exam-prediction cafe poster
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_REFRESH_TOKEN: ${{ secrets.NAVER_REFRESH_TOKEN }}
+          EXAM_MENU_ID: ${{ github.event.inputs.menu_id }}
+        run: |
+          case "${{ github.event.inputs.mode }}" in
+            list_menus) python3 scripts/post_exam_predictions_to_cafe.py --list-menus ;;
+            dry_run)    python3 scripts/post_exam_predictions_to_cafe.py --dry-run ;;
+            post)       python3 scripts/post_exam_predictions_to_cafe.py ;;
+          esac
+
+      - name: Commit posted-state (post 모드에서 재게시 방지)
+        if: ${{ github.event.inputs.mode == 'post' }}
+        run: |
+          if [ -f _data/exam_cafe_posted.json ] && ! git diff --quiet _data/exam_cafe_posted.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add _data/exam_cafe_posted.json
+            git commit -m "chore: record exam-prediction cafe posts"
+            git push
+          fi
