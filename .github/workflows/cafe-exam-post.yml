@@ -15,10 +15,10 @@ on:
           - dry_run      # 게시 없이 미리보기
           - post         # 실제 게시
       menu_id:
-        description: "출제예상문제 게시판 menu id (post 모드에서 필수)"
+        description: "출제예상문제 게시판 menu id (기본값=137)"
         type: string
         required: false
-        default: ""
+        default: "137"
 
 permissions:
   contents: write
