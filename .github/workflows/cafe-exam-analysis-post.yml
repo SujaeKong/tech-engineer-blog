@@ -1,0 +1,67 @@
+name: "Cafe Exam-Analysis Post"
+
+# 출제 적중률 분석 포스트를 카페 '출제예상문제' 게시판(menu 137)에 1회 게시.
+# naver.com 이 열려 있는 GitHub 서버에서 게시한다(로컬/클라우드 컨테이너는 naver 차단).
+#  - push: _data/exam_analysis_trigger.txt 가 갱신되면 자동 post 실행
+#  - workflow_dispatch: 수동 실행(dry_run/post 선택)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "실행 모드"
+        type: choice
+        required: true
+        default: dry_run
+        options:
+          - dry_run
+          - post
+      menu_id:
+        description: "출제예상문제 게시판 menu id (기본값=137)"
+        type: string
+        required: false
+        default: "137"
+  push:
+    branches: [master]
+    paths:
+      - "_data/exam_analysis_trigger.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  analysis-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Post exam-analysis to cafe
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_REFRESH_TOKEN: ${{ secrets.NAVER_REFRESH_TOKEN }}
+          EXAM_MENU_ID: ${{ github.event.inputs.menu_id || '137' }}
+          # push 트리거는 inputs가 비어 있으므로 post 로 기본 동작
+          MODE: ${{ github.event.inputs.mode || 'post' }}
+          # 게시 대상 분석 포스트(트리거 파일 첫 줄로 오버라이드 가능)
+          ANALYSIS_POST: "2026-08-23-140회-기출-적중률-분석.md"
+        run: |
+          # 트리거 파일 첫 줄이 .md 이면 그 파일을 대상으로 사용
+          if [ -f _data/exam_analysis_trigger.txt ]; then
+            first="$(head -n1 _data/exam_analysis_trigger.txt | tr -d '\r')"
+            case "$first" in
+              *.md) ANALYSIS_POST="$first" ;;
+            esac
+          fi
+          export ANALYSIS_POST
+          echo "대상 포스트: $ANALYSIS_POST / 모드: $MODE"
+          if [ "$MODE" = "dry_run" ]; then
+            python3 scripts/post_exam_analysis_to_cafe.py --dry-run
+          else
+            python3 scripts/post_exam_analysis_to_cafe.py
+          fi
